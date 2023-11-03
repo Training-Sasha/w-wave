@@ -1,0 +1,188 @@
+            /* -------------------------------1024px------------------------------- */
+            
+            @media (max-width: 1200px) {
+                .container {
+                    padding: var(--padding-100);
+                }
+                .header__wrap-one {
+                    height: 80px;
+                    padding: 0;
+                    margin-bottom: 12px;
+                    gap: 32px;
+                }
+                .header__logo-wrap {
+                    height: 60px;
+                    display: none;
+                }
+                .header__logo--tablet {
+                    display: block;
+                    height: 60px;
+                }
+                .header__logo--tablet::before {
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    display: flex;
+                    height: 60px;
+                    width: 100%;
+                    background-color: var(--color-light_color);
+                }
+                .header__logo {
+                    position: absolute;
+                    top: 23px;
+                    width: 112px;
+                    height: 14px;
+                    z-index: 1;
+                }
+                .nav {
+                    gap: 33px;
+                }
+                .header__wrap-two::before {
+                    top: 140px;
+                }
+                .age__wrap {
+                    display: none;
+                }
+                .play-item {
+                    padding-right: 23px;
+                }
+                .play-item:nth-child(2) {
+                    padding-right: 16px;
+                }
+            }
+            /* -------------------------------768px-------------------------------*/
+            
+            @media (max-width: 992px) {
+                .container {
+                    padding: var(--padding-114);
+                }
+                .header__list {
+                    max-width: 100%;
+                }
+                .header__wrap-one {
+                    margin-bottom: 17px;
+                }
+                .nav {
+                    gap: 26px;
+                }
+                .nav__list {
+                    display: none;
+                }
+                .menu__burger {
+                    display: block;
+                    position: relative;
+                    top: 4px;
+                    width: 24px;
+                    border-top: 3px solid var(--color-primary);
+                    /* border-radius: 4px; */
+                    cursor: pointer;
+                }
+                .menu__burger::before {
+                    content: "";
+                    position: relative;
+                    top: -14px;
+                    display: block;
+                    width: 24px;
+                    border-top: 3px solid var(--color-primary);
+                    border-radius: 4px;
+                }
+                .menu__burger::after {
+                    content: "";
+                    position: relative;
+                    top: 4px;
+                    display: block;
+                    width: 24px;
+                    border-top: 3px solid var(--color-primary);
+                    border-radius: 4px;
+                }
+                .header__btn-wrap {
+                    grid-template: 20px;
+                }
+                .play-item:nth-child(2) {
+                    display: none;
+                }
+                .play-descr {
+                    display: none;
+                }
+                .play-name {
+                    display: none;
+                }
+                .play-item {
+                    padding: 0;
+                    border: none;
+                }
+                .play-item:nth-child(1) {
+                    border: none;
+                }
+                .play-btn svg {
+                    margin: 0;
+                }
+            }
+            /* -------------------------------320px------------------------------- */
+            
+            @media (max-width: 320px) {
+                .container {
+                    padding: var(--padding-32);
+                }
+                .header__list {
+                    display: none;
+                }
+                .header__btn-exit {
+                    display: none;
+                }
+                .header__logo {
+                    /* position: absolute; */
+                    /* left: 250px; */
+                    width: 87px;
+                    height: 10px;
+                    display: block;
+                }
+                .header__btn-exit--320 {
+                    position: absolute;
+                    top: 7px;
+                    left: 199px;
+                    padding: 9.5px 24px;
+                    border: 2px solid var(--color-black);
+                    border-radius: 77px;
+                    font-family: 'Muller';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+                .header__logo--tablet::before {
+                    height: 54px;
+                }
+                .header__wrap-one {
+                    height: 40px;
+                }
+                .header__wrap-two::before {
+                    top: 104px;
+                    height: 45px;
+                }
+                .play-btn svg {
+                    display: none;
+                }
+                .play--320 {
+                    display: block;
+                }
+                .play-btn--320 {
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+                }
+                .play-btn-descr--320 {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: normal;
+                    color: var(--color-primary);
+                }
+                .submenu {
+                    gap: 0;
+                }
+                .submenu {
+                    gap: 0;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
