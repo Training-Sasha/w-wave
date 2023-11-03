@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
             if (body.querySelector('.tabs__content_active')) { // если уже есть активный элемент контента
                 body.querySelector('.tabs__content_active').classList.remove('tabs__content_active') // то скрываем его
             }
-            body.querySelector(`[data-tab=${getActiveTabName()}]`).classList.add('tabs__content_active') // затем ищем элемент контента, у которого значение data-tab совпадает со значением data-tab активной кнопки и отображаем его
+            body.querySelector(`[data-tab='${getActiveTabName()}']`).classList.add('tabs__content_active') // затем ищем элемент контента, у которого значение data-tab совпадает со значением data-tab активной кнопки и отображаем его
         }
 
         // проверяем при загрузке страницы, есть ли активная вкладка
