@@ -26,7 +26,6 @@ body {
     margin: 0;
     min-width: 320px;
     font-family: 'Muller', sans-serif;
-    overflow-x: hidden;
 }
 
 h1,
@@ -100,9 +99,8 @@ p {
 
 .container {
     margin: 0 auto;
-    /* padding: 0 405px; */
-    padding: 0 100px;
-    max-width: 1310px;
+    padding: 0 405px;
+    max-width: 1920px;
 }
 
 .flex {
@@ -122,9 +120,6 @@ p {
     --color-red: #FF6F6F;
     --color-promo_color: #F0D288;
     --color-promo_color_shade: #BB973E;
-    --padding-114: 0 114px;
-    --padding-100: 0 100px;
-    --padding-32: 0 32px;
 }
 
 
@@ -134,46 +129,27 @@ p {
     background-color: var(--color-white);
 }
 
-.header__logo--tablet {
-    display: none;
-}
-
-.menu__burger {
-    display: none;
-}
-
-.header__logo--tablet.header__btn-exit {
-    /* display: none; */
-}
-
 .header__wrap-one {
-    flex: 1;
     justify-content: space-between;
-    gap: 80px;
     padding-top: 19px;
     padding-bottom: 20px;
 }
 
 .header__logo {
-    /* margin-right: 61px; */
+    margin-right: 61px;
 }
 
 .nav {
-    /* width: 100%; */
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    flex: 1;
-    gap: 52px;
 }
 
 .nav__list {
-    width: 100%;
     justify-content: space-between;
 }
 
 .nav__list-item {
-    /* margin-right: 58.75px; */
+    margin-right: 58.75px;
 }
 
 .nav__link {
@@ -186,11 +162,10 @@ p {
 .header__btn-wrap {
     display: flex;
     align-items: center;
-    gap: 24px;
 }
 
 .header__svg {
-    /* margin-right: 23px; */
+    margin-right: 23px;
 }
 
 .header__btn-exit {
@@ -219,19 +194,10 @@ p {
     width: 100vw;
     border: 1px solid var(--color-light_color);
     z-index: 0;
-    pointer-events: none;
-}
-
-.header__list {
-    width: 100%;
-    max-width: 611px;
-    /* display: flex; */
-    justify-content: space-between;
-    /* gap: 52; */
 }
 
 .header__list-item {
-    /* margin-right: 52px; */
+    margin-right: 52px;
 }
 
 .header__list-item-link {
@@ -258,7 +224,7 @@ p {
 }
 
 .play-item:nth-child(2) {
-    /* margin-right: 53px; */
+    margin-right: 53px;
     padding-right: 40px;
 }
 
@@ -274,7 +240,6 @@ p {
     font-size: 12px;
     line-height: 12px;
     color: var(--color-text_gray);
-    white-space: nowrap;
 }
 
 .play-name {
@@ -307,10 +272,6 @@ p {
 
 .play-btn svg {
     margin-right: 10px;
-}
-
-.play--320 {
-    display: none;
 }
 
 
