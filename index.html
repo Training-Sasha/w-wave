@@ -17,7 +17,7 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__logo--tablet"><img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave"><button class="header__btn-exit--320 btn-reset">Вход</button></div>
+            <div class="header__logo--tablet"><img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave"><button class="header__btn-login--320 btn-reset">Вход</button></div>
             <div class="header__wrap-one flex">
                 <div class="header__logo-wrap"><img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave"></div>
                 <nav class="nav menu">
@@ -37,46 +37,47 @@
                     <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
                 </button>
-                    <button class="header__btn-exit btn-reset">Вход</button>
+                    <button class="header__btn-login btn-reset">Вход</button>
                 </div>
             </div>
             <div class="header__wrap-two">
-                <nav class="nav submenu">
-                    <ul class="header__list list-reset flex">
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Блоги</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Топы</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Опросы</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Рейтинги</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Реклама</a></li>
-                    </ul>
-                    <ul class="header__play list-reset flex">
-                        <li class="play-item flex">
-                            <button class="play-btn btn-reset">
+                <div class="container">
+                    <nav class="nav submenu">
+                        <ul class="header__list list-reset flex">
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Блоги</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Топы</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Опросы</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Рейтинги</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Реклама</a></li>
+                        </ul>
+                        <ul class="header__play list-reset flex">
+                            <li class="play-item flex">
+                                <button class="play-btn btn-reset">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
                               </svg></button>
-                            <div class="play__wrap">
-                                <span class="play-descr">Ранее в&nbsp;эфире</span>
-                                <p class="play-name">«Музыка»</p>
-                            </div>
-                        </li>
-                        <li class="play-item flex">
-                            <button class="play-btn btn-reset">
+                                <div class="play__wrap">
+                                    <span class="play-descr">Ранее в&nbsp;эфире</span>
+                                    <p class="play-name">«Музыка»</p>
+                                </div>
+                            </li>
+                            <li class="play-item flex">
+                                <button class="play-btn btn-reset">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
                               </svg></button>
-                            <div class="play__wrap">
-                                <span class="play-descr">Сейчас в&nbsp;эфире</span>
-                                <p class="play-name">«Как так?»</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="age__wrap">
-                        <span class="age-limit">12+</span>
-                    </div>
-                    <div class="play--320 flex">
-                        <button class="play-btn--320 btn-reset flex">
+                                <div class="play__wrap">
+                                    <span class="play-descr">Сейчас в&nbsp;эфире</span>
+                                    <p class="play-name">«Как так?»</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="age__wrap">
+                            <span class="age-limit">12+</span>
+                        </div>
+                        <div class="play--320 flex">
+                            <button class="play-btn--320 btn-reset flex">
                             <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
                                 <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
@@ -84,8 +85,9 @@
                                 </svg>
                             <p class="play-btn-descr--320">Что в эфире?</p>
                         </button>
-                    </div>
-                </nav>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>

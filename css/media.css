@@ -1,8 +1,11 @@
             /* -------------------------------1024px------------------------------- */
             
             @media (max-width: 1200px) {
+                 :root {
+                    --padding-aside: 0 100px;
+                }
                 .container {
-                    padding: var(--padding-100);
+                    padding: var(--padding-aside);
                 }
                 .header__wrap-one {
                     height: 80px;
@@ -53,8 +56,11 @@
             /* -------------------------------768px-------------------------------*/
             
             @media (max-width: 992px) {
+                 :root {
+                    --padding-aside: 0 114px;
+                }
                 .container {
-                    padding: var(--padding-114);
+                    padding: var(--padding-aside);
                 }
                 .header__list {
                     max-width: 100%;
@@ -120,24 +126,25 @@
             }
             /* -------------------------------320px------------------------------- */
             
-            @media (max-width: 320px) {
+            @media (max-width: 768px) {
+                 :root {
+                    --padding-aside: 0 32px;
+                }
                 .container {
-                    padding: var(--padding-32);
+                    padding: var(--padding-aside);
                 }
                 .header__list {
                     display: none;
                 }
-                .header__btn-exit {
+                .header__btn-login {
                     display: none;
                 }
                 .header__logo {
-                    /* position: absolute; */
-                    /* left: 250px; */
                     width: 87px;
                     height: 10px;
                     display: block;
                 }
-                .header__btn-exit--320 {
+                .header__btn-login--320 {
                     position: absolute;
                     top: 7px;
                     left: 199px;
