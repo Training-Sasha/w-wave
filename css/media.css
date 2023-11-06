@@ -10,32 +10,24 @@
                 .header__wrap-one {
                     height: 80px;
                     padding: 0;
-                    margin-bottom: 12px;
                     gap: 32px;
                 }
-                .header__logo-wrap {
-                    height: 60px;
+                .header__logo {
+                    /* height: 60px; */
                     display: none;
                 }
                 .header__logo--tablet {
-                    display: block;
-                    height: 60px;
-                }
-                .header__logo--tablet::before {
-                    content: "";
-                    position: absolute;
-                    left: 0px;
                     display: flex;
+                    align-items: center;
                     height: 60px;
                     width: 100%;
+                }
+                .header__logo-wrap--tablet {
                     background-color: var(--color-light_color);
                 }
-                .header__logo {
-                    position: absolute;
-                    top: 23px;
+                .header__logo-tablet {
                     width: 112px;
                     height: 14px;
-                    z-index: 1;
                 }
                 .nav {
                     gap: 33px;
@@ -45,6 +37,9 @@
                 }
                 .age__wrap {
                     display: none;
+                }
+                .header__play {
+                    gap: 2px;
                 }
                 .play-item {
                     padding-right: 23px;
@@ -65,9 +60,6 @@
                 .header__list {
                     max-width: 100%;
                 }
-                .header__wrap-one {
-                    margin-bottom: 17px;
-                }
                 .nav {
                     gap: 26px;
                 }
@@ -75,58 +67,50 @@
                     display: none;
                 }
                 .menu__burger {
+                    width: 24px;
+                    height: 3px;
                     display: block;
                     position: relative;
-                    top: 4px;
+                    top: 0;
                     width: 24px;
-                    border-top: 3px solid var(--color-primary);
-                    /* border-radius: 4px; */
+                    background-color: var(--color-primary);
+                    border-radius: 4px;
                     cursor: pointer;
                 }
                 .menu__burger::before {
                     content: "";
-                    position: relative;
-                    top: -14px;
+                    width: 24px;
+                    height: 3px;
+                    position: absolute;
+                    top: -11px;
                     display: block;
                     width: 24px;
-                    border-top: 3px solid var(--color-primary);
                     border-radius: 4px;
+                    background-color: var(--color-primary);
                 }
                 .menu__burger::after {
                     content: "";
-                    position: relative;
-                    top: 4px;
+                    width: 24px;
+                    height: 3px;
+                    position: absolute;
+                    top: 10px;
                     display: block;
                     width: 24px;
-                    border-top: 3px solid var(--color-primary);
+                    background-color: var(--color-primary);
                     border-radius: 4px;
                 }
-                .header__btn-wrap {
-                    grid-template: 20px;
-                }
-                .play-item:nth-child(2) {
+                .header__play {
                     display: none;
-                }
-                .play-descr {
-                    display: none;
-                }
-                .play-name {
-                    display: none;
-                }
-                .play-item {
-                    padding: 0;
                     border: none;
                 }
-                .play-item:nth-child(1) {
-                    border: none;
-                }
-                .play-btn svg {
-                    margin: 0;
+                .header__play--768 {
+                    display: block;
+                    cursor: pointer;
                 }
             }
             /* -------------------------------320px------------------------------- */
             
-            @media (max-width: 768px) {
+            @media (max-width: 767px) {
                  :root {
                     --padding-aside: 0 32px;
                 }
@@ -139,15 +123,13 @@
                 .header__btn-login {
                     display: none;
                 }
-                .header__logo {
+                .header__logo-tablet {
                     width: 87px;
                     height: 10px;
                     display: block;
                 }
                 .header__btn-login--320 {
-                    position: absolute;
-                    top: 7px;
-                    left: 199px;
+                    display: block;
                     padding: 9.5px 24px;
                     border: 2px solid var(--color-black);
                     border-radius: 77px;
@@ -157,17 +139,17 @@
                     font-size: 16px;
                     line-height: 16px;
                 }
-                .header__logo--tablet::before {
+                .header__logo--tablet {
                     height: 54px;
+                    justify-content: space-between;
                 }
                 .header__wrap-one {
-                    height: 40px;
+                    height: 50px;
                 }
-                .header__wrap-two::before {
-                    top: 104px;
-                    height: 45px;
+                .header__wrap-two {
+                    height: 43px;
                 }
-                .play-btn svg {
+                .header__play--768 {
                     display: none;
                 }
                 .play--320 {
@@ -183,9 +165,6 @@
                     font-size: 16px;
                     line-height: normal;
                     color: var(--color-primary);
-                }
-                .submenu {
-                    gap: 0;
                 }
                 .submenu {
                     gap: 0;

@@ -16,32 +16,43 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__logo--tablet"><img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave"><button class="header__btn-login--320 btn-reset">Вход</button></div>
-            <div class="header__wrap-one flex">
-                <div class="header__logo-wrap"><img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave"></div>
-                <nav class="nav menu">
-                    <span class="menu__burger"></span>
-                    <ul class="nav__list list-reset flex">
-                        <li class="nav__list-item"><a class="nav__link" href="#">Подкасты</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Передачи</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Гости</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Плейлисты</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
-                    </ul>
-                </nav>
-                <div class="header__btn-wrap">
-                    <button class="header__btn-search btn-reset">
-                  <svg class="header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-                    <button class="header__btn-login btn-reset">Вход</button>
+        <div class="header__logo-wrap--tablet">
+            <div class="container">
+                <div class="header__logo--tablet">
+                    <img class="header__logo-tablet" src="img/logo-desctop.svg" alt="логотип w-wave">
+                    <button class="header__btn-login--320 btn-reset">Вход</button>
                 </div>
             </div>
-            <div class="header__wrap-two">
-                <div class="container">
+        </div>
+        <div class="header__wrapper-one ">
+            <div class="container">
+                <div class="header__wrap-one flex">
+                    <img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave">
+                    <nav class="nav menu">
+                        <span class="menu__burger"></span>
+                        <ul class="nav__list list-reset flex">
+                            <li class="nav__list-item"><a class="nav__link" href="#">Подкасты</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Передачи</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Гости</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Плейлисты</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__btn-wrap">
+                        <button class="header__btn-search btn-reset">
+                        <svg class="header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                        <button class="header__btn-login btn-reset">Вход</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__wrapper-two">
+            <div class="container">
+                <div class="header__wrap-two">
                     <nav class="nav submenu">
                         <ul class="header__list list-reset flex">
                             <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
@@ -56,7 +67,8 @@
                                 <button class="play-btn btn-reset">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
-                              </svg></button>
+                              </svg>
+                            </button>
                                 <div class="play__wrap">
                                     <span class="play-descr">Ранее в&nbsp;эфире</span>
                                     <p class="play-name">«Музыка»</p>
@@ -73,6 +85,11 @@
                                 </div>
                             </li>
                         </ul>
+                        <div class="header__play--768">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                                </svg>
+                        </div>
                         <div class="age__wrap">
                             <span class="age-limit">12+</span>
                         </div>
