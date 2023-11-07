@@ -16,62 +16,95 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <div class="header__wrap-one flex">
-                <img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave">
-                <nav class="nav menu">
-                    <ul class="nav__list list-reset flex">
-                        <li class="nav__list-item"><a class="nav__link" href="#">Подкасты</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Передачи</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Гости</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">Плейлисты</a></li>
-                        <li class="nav__list-item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
-                    </ul>
-                </nav>
-                <div class="header__btn-wrap">
-                    <button class="header__btn-search btn-reset">
-                  <svg class="header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
-                    <button class="header__btn-exit btn-reset">Выход</button>
+        <div class="header__logo-wrap--tablet">
+            <div class="container">
+                <div class="header__logo--tablet">
+                    <img class="header__logo-tablet" src="img/logo-desctop.svg" alt="логотип w-wave">
+                    <button class="header__btn-login--320 btn-reset">Вход</button>
                 </div>
             </div>
-            <div class="header__wrap-two">
-                <nav class="nav flex">
-                    <ul class="header__list list-reset flex">
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Блоги</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Топы</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Опросы</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Рейтинги</a></li>
-                        <li class="header__list-item"><a class="header__list-item-link" href="#">Реклама</a></li>
-                    </ul>
-                    <ul class="header__play list-reset flex">
-                        <li class="play-item flex">
-                            <button class="play-btn btn-reset"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
-                              </svg></button>
-                            <div class="play__wrap">
-                                <span class="play-descr">Ранее в&nbsp;эфире</span>
-                                <p class="play-name">«Музыка»</p>
-                            </div>
-                        </li>
-                        <li class="play-item flex">
-                            <button class="play-btn btn-reset"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
-                              </svg></button>
-                            <div class="play__wrap">
-                                <span class="play-descr">Сейчас в&nbsp;эфире</span>
-                                <p class="play-name">«Как так?»</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="age__wrap">
-                        <span class="age-limit">12+</span>
+        </div>
+        <div class="header__wrapper-one ">
+            <div class="container">
+                <div class="header__wrap-one flex">
+                    <img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave">
+                    <nav class="nav menu">
+                        <span class="menu__burger"></span>
+                        <ul class="nav__list list-reset flex">
+                            <li class="nav__list-item"><a class="nav__link" href="#">Подкасты</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Передачи</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Гости</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">Плейлисты</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header__btn-wrap">
+                        <button class="header__btn-search btn-reset">
+                        <svg class="header__svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20.9999 21L16.6499 16.65" stroke="#6D31EE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                        <button class="header__btn-login btn-reset">Вход</button>
                     </div>
-                </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__wrapper-two">
+            <div class="container">
+                <div class="header__wrap-two">
+                    <nav class="nav submenu">
+                        <ul class="header__list list-reset flex">
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Блоги</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Топы</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Опросы</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Рейтинги</a></li>
+                            <li class="header__list-item"><a class="header__list-item-link" href="#">Реклама</a></li>
+                        </ul>
+                        <ul class="header__play list-reset flex">
+                            <li class="play-item flex">
+                                <button class="play-btn btn-reset">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                              </svg>
+                            </button>
+                                <div class="play__wrap">
+                                    <span class="play-descr">Ранее в&nbsp;эфире</span>
+                                    <p class="play-name">«Музыка»</p>
+                                </div>
+                            </li>
+                            <li class="play-item flex">
+                                <button class="play-btn btn-reset">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                              </svg></button>
+                                <div class="play__wrap">
+                                    <span class="play-descr">Сейчас в&nbsp;эфире</span>
+                                    <p class="play-name">«Как так?»</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__play--768">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z" fill="#A1A6B4"/>
+                                </svg>
+                        </div>
+                        <div class="age__wrap">
+                            <span class="age-limit">12+</span>
+                        </div>
+                        <div class="play--320 flex">
+                            <button class="play-btn--320 btn-reset flex">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="7.5" cy="7.5" r="7.5" fill="#6D31EE"/>
+                                <path d="M12 7.00014V8.00014H3V7.00014H12Z" fill="white"/>
+                                <path d="M8 12.0001H7L7 3.00014L8 3.00014L8 12.0001Z" fill="white"/>
+                                </svg>
+                            <p class="play-btn-descr--320">Что в эфире?</p>
+                        </button>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -108,7 +141,8 @@
                                         <p class="podcast__descr-name">Дмитрий Гутенберг</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                               <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                               </svg></button>
@@ -154,7 +188,8 @@
                                         <p class="podcast__descr-name">Дмитрий Гутенберг</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                             <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                             </svg></button>
@@ -200,7 +235,8 @@
                                         <p class="podcast__descr-name">Анна Васильева</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                           <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                           </svg></button>
@@ -246,7 +282,8 @@
                                         <p class="podcast__descr-name">Пётр Дмитриевский</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                         <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                         </svg></button>
@@ -292,7 +329,8 @@
                                         <p class="podcast__descr-name">Пётр Дмитриевский</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                             <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                             </svg></button>
@@ -338,7 +376,8 @@
                                         <p class="podcast__descr-name">Татьяна Флеганова</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                             <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                             </svg></button>
@@ -384,7 +423,8 @@
                                         <p class="podcast__descr-name">Пётр Дмитриевский</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                             <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                             </svg></button>
@@ -430,7 +470,8 @@
                                         <p class="podcast__descr-name">Татьяна Флеганова</p>
                                     </li>
                                 </ul>
-                                <button class="podcast__btn-play btn-reset"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <button class="podcast__btn-play btn-reset">
+                                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="24" cy="24" r="20" stroke="#A1A6B4" stroke-width="2"/>
                             <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="#A1A6B4"/>
                             </svg></button>
@@ -487,52 +528,64 @@
                         </div>
                     </div>
                     <ul class="broadcasts__wrap-cards list-reset">
-                        <li class="boardcasts__wrap-cards-item"><img class="boardcasts__cards-img" src="img/broadcasts-1.jpg" alt="обложка подкаста">
+                        <li class="boardcasts__wrap-cards-item">
+                            <img class="boardcasts__cards-img" src="img/broadcasts-1.jpg" alt="обложка подкаста">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name">О людях и книгах</p>
                                 <p class="boardscasts__time">Анонсируется отдельно</p>
-                                <a class="boardcasts__cards-link" href="#">Подробнее<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="boardcasts__cards-link" href="#">Подробнее
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                                   </svg></a></div>
                         </li>
-                        <li class="boardcasts__wrap-cards-item"><img class="boardcasts__cards-img" src="img/broadcasts-2.jpg" alt="обложка подкаста">
+                        <li class="boardcasts__wrap-cards-item">
+                            <img class="boardcasts__cards-img" src="img/broadcasts-2.jpg" alt="обложка подкаста">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name">Графомания td</p>
                                 <p class="boardscasts__time">По понедельникам в 10:00</p>
-                                <a class="boardcasts__cards-link" href="#">Подробнее<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="boardcasts__cards-link" href="#">Подробнее
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                                   </svg></a></div>
                         </li>
-                        <li class="boardcasts__wrap-cards-item"><img class="boardcasts__cards-img" src="img/broadcasts-3.jpg" alt="обложка подкаста">
+                        <li class="boardcasts__wrap-cards-item">
+                            <img class="boardcasts__cards-img" src="img/broadcasts-3.jpg" alt="обложка подкаста">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name">Не Рим, не Троя</p>
                                 <p class="boardscasts__time">По вторникам в 12:00</p>
-                                <a class="boardcasts__cards-link" href="#">Подробнее<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="boardcasts__cards-link" href="#">Подробнее
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                                   </svg></a></div>
                         </li>
-                        <li class="boardcasts__wrap-cards-item"><img class="boardcasts__cards-img" src="img/broadcasts-4.jpg" alt="обложка подкаста ">
+                        <li class="boardcasts__wrap-cards-item">
+                            <img class="boardcasts__cards-img" src="img/broadcasts-4.jpg" alt="обложка подкаста ">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name ">Эрудит</p>
                                 <p class="boardscasts__time ">По пятницам в 17:00</p>
-                                <a class="boardcasts__cards-link " href="# ">Подробнее<svg width="28 " height="12 " viewBox="0 0 28 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
+                                <a class="boardcasts__cards-link " href="# ">Подробнее
+                                    <svg width="28 " height="12 " viewBox="0 0 28 12 " fill="none " xmlns="http://www.w3.org/2000/svg ">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645
                                                               9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z " fill="#121723 "/>
                                   </svg></a></div>
                         </li>
-                        <li class="boardcasts__wrap-cards-item "><img class="boardcasts__cards-img " src="img/broadcasts-5.jpg" alt="обложка подкаста">
+                        <li class="boardcasts__wrap-cards-item ">
+                            <img class="boardcasts__cards-img " src="img/broadcasts-5.jpg" alt="обложка подкаста">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name">Тонкости эпохи</p>
                                 <p class="boardscasts__time">По субботам в 10:00</p>
-                                <a class="boardcasts__cards-link" href="#">Подробнее<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="boardcasts__cards-link" href="#">Подробнее
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                                   </svg></a></div>
                         </li>
-                        <li class="boardcasts__wrap-cards-item"><img class="boardcasts__cards-img" src="img/broadcasts-6.jpg" alt="обложка подкаста">
+                        <li class="boardcasts__wrap-cards-item">
+                            <img class="boardcasts__cards-img" src="img/broadcasts-6.jpg" alt="обложка подкаста">
                             <div class="boardcasts__wrap-cards-item-inner">
                                 <p class="boardcasts__prg-name">Живые мысли</p>
                                 <p class="boardscasts__time">По воскресеньям в 15:30</p>
-                                <a class="boardcasts__cards-link" href="#">Подробнее<svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <a class="boardcasts__cards-link" href="#">Подробнее
+                                    <svg width="28" height="12" viewBox="0 0 28 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                   <path d="M24.3536 6.35355C24.5488 6.15829 24.5488 5.84171 24.3536 5.64645L21.1716 2.46447C20.9763 2.2692 20.6597 2.2692 20.4645 2.46447C20.2692 2.65973 20.2692 2.97631 20.4645 3.17157L23.2929 6L20.4645 8.82843C20.2692 9.02369 20.2692 9.34027 20.4645 9.53553C20.6597 9.7308 20.9763 9.7308 21.1716 9.53553L24.3536 6.35355ZM4 6.5H24V5.5H4V6.5Z" fill="#121723"/>
                                   </svg></a></div>
                         </li>
