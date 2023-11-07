@@ -198,14 +198,14 @@ p {
 }
 
 .header__wrapper-two {
-    width: 100vw;
+    width: 100%;
     border: 1px solid var(--color-light_color);
 }
 
 .header__list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 52px;
 }
 
 .header__list-item {}
