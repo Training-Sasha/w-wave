@@ -7,13 +7,13 @@
                 .container {
                     padding: var(--padding-aside);
                 }
+                /* ------header------ */
                 .header__wrap-one {
                     height: 80px;
                     padding: 0;
                     gap: 32px;
                 }
                 .header__logo {
-                    /* height: 60px; */
                     display: none;
                 }
                 .header__logo--tablet {
@@ -47,6 +47,18 @@
                 .play-item:nth-child(2) {
                     padding-right: 16px;
                 }
+                /* ------hero------ */
+                .hero__img {
+                    width: 256px;
+                    height: 262px;
+                }
+                .hero__prph {
+                    max-width: 539px;
+                    margin-bottom: 21px;
+                }
+                .hero__block:nth-child(1) {
+                    padding: 83px 0;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -57,6 +69,7 @@
                 .container {
                     padding: var(--padding-aside);
                 }
+                /* ------header------ */
                 .header__list {
                     max-width: 100%;
                 }
@@ -107,6 +120,10 @@
                     display: block;
                     cursor: pointer;
                 }
+                /* ------hero------ */
+                .hero__img {
+                    display: none;
+                }
             }
             /* -------------------------------320px------------------------------- */
             
@@ -117,6 +134,7 @@
                 .container {
                     padding: var(--padding-aside);
                 }
+                /* ------header------ */
                 .header__list {
                     display: none;
                 }
@@ -170,5 +188,27 @@
                     gap: 0;
                     display: flex;
                     justify-content: center;
+                }
+                /* ------hero------ */
+                .hero__header {
+                    height: 55px;
+                    gap: 9px;
+                    margin-bottom: 0;
+                    font-size: 32px;
+                    line-height: 32px;
+                }
+                .hero__header .hero__header-excerpt {
+                    font-size: 32px;
+                }
+                .hero__block:nth-child(1) {
+                    padding: 23px 0;
+                }
+                .hero__prph {
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                .hero__btn {
+                    padding: 15px 45px;
+                    font-size: 16px;
                 }
             }
