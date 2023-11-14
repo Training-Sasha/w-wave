@@ -107,6 +107,13 @@
                     display: block;
                     cursor: pointer;
                 }
+                /* ---podcast--- */
+                .podcast__list {
+                    flex-direction: column;
+                }
+                .podcast__list-item {
+                    width: 100%;
+                }
             }
             /* -------------------------------320px------------------------------- */
             
@@ -170,5 +177,31 @@
                     gap: 0;
                     display: flex;
                     justify-content: center;
+                }
+                /* ---podcast--- */
+                .podcast {
+                    padding: 52px 0;
+                }
+                .podcast__header {
+                    margin-bottom: 22px;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                .podcast__list-item:nth-child(n+5) {
+                    display: none;
+                }
+                .podcast__list-item {
+                    flex-direction: column;
+                }
+                .podcast__list-item {
+                    width: fit-content;
+                    width: -moz-fit-content;
+                }
+                .podcast__wrapper-list {
+                    padding: 16px 16px 12px 16px;
+                }
+                .podcast__btn {
+                    padding: 14.5px 30px;
+                    font-size: 16px;
                 }
             }

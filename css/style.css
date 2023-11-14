@@ -41,6 +41,7 @@ p {
     src: url(../fonts/MullerRegular.woff2), url(../fonts/MullerRegular.woff);
     font-display: swap;
     font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
@@ -48,6 +49,7 @@ p {
     src: url(../fonts/MullerMedium.woff2), url(../fonts/MullerMedium.woff);
     font-display: swap;
     font-weight: 500;
+    font-style: normal;
 }
 
 @font-face {
@@ -55,6 +57,7 @@ p {
     src: url(../fonts/MullerRegularItalic.woff2), url(../fonts/MullerRegularItalic.woff);
     font-display: swap;
     font-weight: 400;
+    font-style: italic;
 }
 
 @font-face {
@@ -62,6 +65,7 @@ p {
     src: url(../fonts/MullerBold.woff2), url(../fonts/MullerBold.woff);
     font-display: swap;
     font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
@@ -69,6 +73,7 @@ p {
     src: url(../fonts/MullerLightItalic.woff2), url(../fonts/MullerLightItalic.woff);
     font-display: swap;
     font-weight: 300;
+    font-style: italic;
 }
 
 @font-face {
@@ -76,6 +81,7 @@ p {
     src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff);
     font-display: swap;
     font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
@@ -83,6 +89,7 @@ p {
     src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff);
     font-display: swap;
     font-weight: 400;
+    font-style: normal;
 }
 
 .btn-reset {
@@ -406,8 +413,10 @@ p {
 }
 
 .podcast__btn-play {
+    height: 48px;
+    width: 48px;
     align-self: flex-end;
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .podcast__pic {
@@ -436,15 +445,17 @@ p {
     /* top: 6px; */
     display: flex;
     align-items: flex-end;
-    padding-top: 6px;
-    padding-left: 30px;
+    gap: 30px;
+    /* padding-top: 6px;
+    padding-left: 30px; */
+    padding: 6px 206px 6px 30px;
     border-top: 1px solid var(--color-light_color);
 }
 
 .actions__wrap-item {
     display: flex;
     align-items: flex-end;
-    padding-right: 32px;
+    /* padding-right: 32px; */
 }
 
 .actions__wrap-item svg {
