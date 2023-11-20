@@ -20,6 +20,7 @@ p {
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 body {
@@ -231,12 +232,13 @@ p {
     width: 100%;
     align-items: center;
     align-self: center;
-    gap: 40px;
+    /* gap: 40px; */
     border-left: 1px solid var(--color-light_color);
     border-right: 1px solid var(--color-light_color);
 }
 
 .play-item {
+    min-width: 173px;
     align-items: center;
     padding: 0 10px;
     gap: 10px;
@@ -346,7 +348,7 @@ p {
     max-width: 635px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 24px;
 }
 
 .hero__btn {
@@ -368,7 +370,7 @@ p {
 }
 
 .podcast__header {
-    margin-bottom: 34px;
+    margin-bottom: 29px;
     font-weight: 400;
     font-size: 48px;
     line-height: 100%;
@@ -383,11 +385,10 @@ p {
 }
 
 .podcast__list-item {
+    /* height: 100%; */
     position: relative;
     display: flex;
     /* justify-content: space-between; */
-    /* padding: 0 33px 0 0; */
-    /* max-width: 540px; */
     width: calc(50% - 15px);
     background-color: var(--color-white);
 }
@@ -396,9 +397,7 @@ p {
     display: flex;
     flex-direction: column;
     width: calc(100% - 112px);
-    /* margin-right: auto; */
-    /* justify-content: space-between; */
-    /* padding: 24px 33px 0 30px; */
+    justify-content: space-between;
 }
 
 .podcast__wrapper-list {
@@ -406,8 +405,8 @@ p {
     justify-content: space-between;
     /* align-items: flex-end; */
     /* align-self: flex-end; */
-    padding: 24px 33px 0 30px;
-    margin-bottom: 24px;
+    padding: 24px 33px 24px 30px;
+    /* margin-bottom: 24px; */
 }
 
 .podcast__descr-time {
@@ -441,13 +440,14 @@ p {
     /* align-items: flex-end; */
 }
 
-.podcast__pic {
-    max-height: 140px;
+.podcast__img {
+    height: 100%;
+    object-fit: cover;
 }
 
 .podcast__data {
     position: absolute;
-    top: 124px;
+    bottom: 0;
     left: 0px;
     display: flex;
     align-items: center;
@@ -470,19 +470,20 @@ p {
     gap: 30px;
     /* padding-top: 6px;
     padding-left: 30px; */
-    padding: 6px 206px 6px 30px;
+    padding: 7px 30px 8px 30px;
     border-top: 1px solid var(--color-light_color);
 }
 
 .actions__wrap-item {
     display: flex;
-    align-items: flex-end;
-    /* padding-right: 32px; */
+    align-items: center;
+    gap: 6px;
 }
 
-.actions__wrap-item svg {
+
+/* .actions__wrap-item svg {
     margin-right: 6px;
-}
+} */
 
 .podcast__btn-wrap {
     justify-content: center;
@@ -496,6 +497,10 @@ p {
     color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: 40px;
+}
+
+.actions__wrap-item-icon {
+    cursor: pointer;
 }
 
 

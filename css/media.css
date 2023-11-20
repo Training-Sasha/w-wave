@@ -218,6 +218,9 @@
                     padding: 15px 45px;
                     font-size: 16px;
                 }
+            }
+            
+            @media (max-width: 440px) {
                 /* ---podcast--- */
                 .podcast {
                     padding: 52px 0;
@@ -227,21 +230,60 @@
                     font-size: 24px;
                     line-height: 24px;
                 }
+                .podcast__wrapper {
+                    width: 100%;
+                }
                 .podcast__list-item:nth-child(n+5) {
                     display: none;
                 }
                 .podcast__list-item {
                     flex-direction: column;
                 }
-                .podcast__list-item {
-                    width: fit-content;
-                    width: -moz-fit-content;
-                }
                 .podcast__wrapper-list {
-                    padding: 16px 16px 12px 16px;
+                    padding: 16px 16px 16px 16px;
+                }
+                .podcast__list {
+                    align-items: center;
+                    margin-bottom: 30px;
                 }
                 .podcast__btn {
                     padding: 14.5px 30px;
                     font-size: 16px;
+                }
+                .podcast__data {
+                    top: 0;
+                }
+                .podcast__img {
+                    /* width: 256px; */
+                    width: 100%;
+                    height: 72px;
+                }
+                .podcast__btn-play {
+                    width: 36px;
+                    height: 36px;
+                }
+                .podcast__btn-play-svg {
+                    width: 36px;
+                    height: 36px;
+                }
+                .podcast__descr-time {
+                    margin-bottom: 5px;
+                }
+                .podcast__descr-song {
+                    margin-bottom: 0;
+                    font-size: 16px;
+                }
+                .podcast__descr-name {
+                    margin-bottom: 0;
+                    font-size: 12px;
+                }
+                .actions__wrap {
+                    padding: 5px 30px 6px 35px;
+                }
+                .actions__numbers {
+                    font-size: 12px;
+                }
+                .podcast__btn-play {
+                    align-self: center;
                 }
             }
