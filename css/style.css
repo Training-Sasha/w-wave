@@ -968,3 +968,8 @@ p {
 .tabs__content_active {
     display: block;
 }
+
+.ac {
+    font-size: 1px;
+    display: block;
+}
