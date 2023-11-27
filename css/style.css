@@ -740,7 +740,6 @@ p {
 
 .guests__prg {
     margin: 0;
-    /* margin-bottom: 51px; */
     max-width: 825px;
     font-weight: 400;
     font-size: 20px;
@@ -749,11 +748,24 @@ p {
 }
 
 .guests__wrapper {
-    gap: 30px;
+    gap: 26px;
 }
 
 .guests__inner-img-plug {
+    height: auto;
     object-fit: cover;
+    aspect-ratio: 350 / 220;
+}
+
+.guests__inner-img {
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 350 / 220;
+}
+
+.accordion {
+    flex: 1;
+    width: 100%;
 }
 
 
@@ -841,10 +853,6 @@ p {
     transition: all ease-in-out .2s;
 }
 
-.ac-item:not(:last-child) {
-    margin-right: 30px;
-}
-
 .ac-text-item {
     line-height: 16px;
     font-size: 16px;
@@ -855,10 +863,6 @@ p {
 
 .ac-text-item:hover {
     color: var(--color-primary_light);
-}
-
-.ac-text-item:not(:last-child) {
-    margin-bottom: 16px;
 }
 
 .ac.is-active>.ac-header .ac-trigger::after {
@@ -877,7 +881,6 @@ p {
     text-align: left;
     width: 100%;
     padding: 20px 0;
-    /* display: block; */
     background-color: transparent;
     transition: color .25s ease;
     position: relative;
@@ -895,15 +898,10 @@ p {
 }
 
 .ac-text {
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* display: flex; */
-    /* justify-content: space-between; */
-    /* flex-wrap: nowrap; */
-    /* flex-basis: 0; */
-    /* margin: 30px 0 30px 0; */
-    /* max-width: 730px; */
-    /* gap: 30px; */
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    gap: 16px 26px;
 }
 
 .ac-panel {
@@ -919,11 +917,8 @@ p {
 }
 
 .guests__list {
-    margin-bottom: 12px;
-}
-
-.guests__list-item:not(:last-child) svg {
-    margin-right: 30px;
+    margin-bottom: 7px;
+    gap: 30px;
 }
 
 .guests__title {
@@ -938,14 +933,13 @@ p {
     margin-bottom: 30px;
     max-width: 350px;
     line-height: 180%;
-    /* 28.8px */
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text_gray);
 }
 
 .guests__btn {
-    padding: 17px 43px;
+    padding: 10px 18px;
     border-radius: 77px;
     border: 2px solid var(--color-primary_light);
     line-height: normal;
