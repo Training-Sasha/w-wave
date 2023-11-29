@@ -59,6 +59,9 @@
                 .hero__block:nth-child(1) {
                     padding: 83px 0;
                 }
+                .podcast__wrapper {
+                    flex: 1 0 auto;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -130,6 +133,9 @@
                 }
                 .podcast__list-item {
                     width: 100%;
+                }
+                .podcast__list {
+                    grid-template-columns: 1fr;
                 }
             }
             /* -------------------------------320px------------------------------- */
