@@ -59,6 +59,46 @@
                 .hero__block:nth-child(1) {
                     padding: 83px 0;
                 }
+                /* ------broadcasts------ */
+                .broadcasts__wrap {
+                    justify-content: start;
+                    gap: 227px;
+                }
+            }
+            
+            @media (max-width: 1023px) {
+                .broadcasts__inner:nth-child(2) {
+                    display: none;
+                }
+                .broadcasts__wrapper {
+                    flex-direction: column;
+                }
+                .broadcasts__wrap {
+                    padding-bottom: 0;
+                }
+                .broadcasts__wrap-cards {
+                    justify-content: center;
+                    padding: 0;
+                }
+                .broadcasts__inner-1024 {
+                    display: block;
+                    display: flex;
+                    justify-content: center;
+                    position: relative;
+                    padding: 30px 0;
+                    gap: 20px;
+                }
+                .broadcasts__inner-1024::before {
+                    content: "";
+                    top: 0;
+                    width: 100vh;
+                    height: 1px;
+                    position: absolute;
+                    background-color: var(--color-light_color);
+                }
+                .broadcasts__prg {
+                    width: 256px;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -123,6 +163,16 @@
                 /* ------hero------ */
                 .hero__img {
                     display: none;
+                }
+                /* ------broadcasts------ */
+                .broadcasts__wrapper {
+                    gap: 0;
+                }
+                .broadcasts__inner {
+                    margin-bottom: 45px;
+                }
+                .broadcasts__wrap-cards {
+                    margin-bottom: 61px;
                 }
             }
             /* -------------------------------320px------------------------------- */
@@ -210,5 +260,84 @@
                 .hero__btn {
                     padding: 15px 45px;
                     font-size: 16px;
+                }
+                /* ------broadcasts------ */
+                .broadcasts__wrap {
+                    padding-top: 54px;
+                }
+                .broadcasts__inner {
+                    margin-bottom: 28px;
+                }
+                .broadcasts__wrap-cards {
+                    margin-bottom: 31px;
+                }
+                .broadcasts__prg {
+                    width: 100%;
+                }
+                .broadcasts-block-1024 {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    gap: 7px;
+                }
+                .broadcasts__wrap-cards-item {
+                    /* flex-grow: 1;
+                    flex-basis: 255px; */
+                }
+                .broadcasts__img {
+                    width: 77px;
+                    height: 105px;
+                }
+            }
+            
+            @media (max-width: 320px) {
+                .broadcasts__wrap-cards-item-inner {
+                    height: 99px;
+                    padding: 7px 4px 12px 10px;
+                    justify-content: space-between;
+                }
+                .broadcasts__wrap-cards {
+                    /* display: grid;
+                    grid-template-columns: repeat(2, minmax(113px, 1fr)); */
+                    /* flex-grow: 1;
+                    flex-basis: 113px; */
+                }
+                .broadcasts__cards-img {
+                    width: 113px;
+                    height: 50px;
+                }
+                .broadcasts__wrap-cards-item {
+                    flex-grow: 1;
+                    flex-basis: 113px;
+                }
+                .broadcasts__header {
+                    margin-bottom: 20px;
+                    font-size: 24px;
+                }
+                .broadcasts__descr--author {
+                    margin-bottom: 2px;
+                    font-size: 12px;
+                }
+                .broadcasts__prg-name {
+                    margin-bottom: 3px;
+                    font-size: 12px;
+                    line-height: 100%;
+                }
+                .broadcasts__time {
+                    margin-bottom: 0;
+                    font-size: 9px;
+                }
+                .broadcasts__cards-link {
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                }
+                .broadcasts__btn {
+                    padding: 7px 31px;
+                }
+                .broadcasts__prg {
+                    font-size: 14px;
+                }
+                .broadcasts__inner-1024 {
+                    gap: 13px;
                 }
             }
