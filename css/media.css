@@ -1,5 +1,15 @@
             /* -------------------------------1024px------------------------------- */
             
+            @media (max-width: 1310px) {
+                /* ------playlist------ */
+                .playlist__card {
+                    flex: 1 0 254px;
+                }
+                .playlist__img {
+                    width: 100%;
+                }
+            }
+            
             @media (max-width: 1200px) {
                  :root {
                     --padding-aside: 0 100px;
@@ -61,6 +71,49 @@
                 }
                 .podcast__wrapper {
                     flex: 1 0 auto;
+                }
+                /* ------playlist------ */
+                .radio__block-desctop {
+                    display: none;
+                }
+                .radio__block-shadow {
+                    display: block;
+                }
+                .playlists__wrap {
+                    flex-direction: column;
+                    gap: 0;
+                }
+                .radio__list {
+                    height: 165px;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    /* display: grid; */
+                    /* grid-template-columns: 1fr 1fr; */
+                    gap: 19px;
+                    margin-bottom: 31px;
+                    /* grid-auto-flow: column; */
+                }
+                .playlist__cards {
+                    padding-top: 0;
+                    padding-bottom: 42px;
+                }
+                .playlist__card {
+                    display: flex;
+                    flex: 1 0 254px;
+                }
+                .playlist__img {
+                    width: 112px;
+                    height: 112px;
+                }
+                .playlist__svg {
+                    left: 0;
+                }
+                .playlist__inner {
+                    width: 100%;
+                    padding: 38px 8px 16px 9px;
+                }
+                .radio__border::before {
+                    width: 100%;
                 }
             }
             /* -------------------------------768px-------------------------------*/
@@ -136,6 +189,11 @@
                 }
                 .podcast__list {
                     grid-template-columns: 1fr;
+                }
+                /* ------playlist------ */
+                .radio__list {
+                    height: 227px;
+                    gap: 33px;
                 }
             }
             /* -------------------------------320px------------------------------- */
@@ -223,6 +281,92 @@
                 .hero__btn {
                     padding: 15px 45px;
                     font-size: 16px;
+                }
+                /* ------playlist------ */
+                .form-radio {
+                    display: none;
+                }
+                .playlist__slider {
+                    display: block;
+                    display: flex;
+                    overflow-x: auto;
+                }
+                .playlist__slider::-webkit-scrollbar {
+                    display: none;
+                }
+                .playlist__slider-list {
+                    margin-bottom: 30px;
+                    gap: 15px;
+                }
+                .playlist__slider-btn {
+                    padding: 7px 18px;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: var(--color-primary);
+                    border: 2px solid var(--color-primary);
+                    border-radius: 77px;
+                    white-space: nowrap;
+                    transition: all .3s ease-in-out;
+                }
+                .playlist__slider-btn:focus-visible {
+                    color: var(--color-white);
+                    background-color: var(--color-primary_light);
+                }
+                .playlist__slider-btn:hover {
+                    color: var(--color-white);
+                    background-color: var(--color-primary);
+                }
+                .playlist__slider-btn:active {
+                    color: var(--color-white);
+                    background-color: var(--color-primary_shade);
+                    border-color: var(--color-primary_shade);
+                }
+                .radio-wrap {
+                    padding-top: 54px;
+                }
+                .radio__header {
+                    margin-bottom: 6px;
+                    font-size: 24px;
+                }
+                .radio__descr {
+                    margin-bottom: 4px;
+                    font-size: 12px;
+                }
+                .playlist__img {
+                    width: 100%;
+                    height: 100%;
+                    /* width: 113px;
+                    height: 113px; */
+                }
+                .playlist__card {
+                    flex-direction: column;
+                    flex: 1 0 113px;
+                }
+                .playlist__inner {
+                    padding: 8px 8px 8px 9px;
+                }
+                .playlist__name {
+                    margin-bottom: 4px;
+                    font-size: 12px;
+                }
+                .playlist__descr {
+                    font-size: 9px;
+                }
+                .playlist__svg {
+                    right: 0;
+                }
+                .playlist__cards {
+                    padding-bottom: 31px;
+                }
+                .radio__prg {
+                    line-height: 16px;
+                    font-size: 12px;
+                }
+                .radio__border::before {
+                    margin-bottom: 27px;
+                }
+                .radio__descr--lices {
+                    font-size: 12px;
                 }
             }
             

@@ -26,7 +26,7 @@ img {
 body {
     margin: 0;
     min-width: 320px;
-    font-family: 'Muller', sans-serif;
+    font-family: Muller, sans-serif;
     overflow-x: hidden;
 }
 
@@ -75,22 +75,6 @@ p {
     font-display: swap;
     font-weight: 300;
     font-style: italic;
-}
-
-@font-face {
-    font-family: 'Muller';
-    src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff);
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff);
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
 }
 
 .btn-reset {
@@ -986,37 +970,38 @@ p {
     gap: 34px;
 }
 
-.checkbox-wrap {
+.radio-wrap {
     padding-top: 94px;
 }
 
-.header__checkbox {
+.radio__header {
     line-height: 48px;
     font-size: 48px;
     font-weight: 400;
 }
 
-.checkbox__descr {
-    margin-bottom: 5px;
+.radio__descr {
+    margin-bottom: 9px;
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text_gray);
 }
 
-.checkbox__name {
+.radio__name {
     font-size: 20px;
     font-weight: 400;
-    gap: 12px;
+    gap: 15px;
 }
 
-.checkbox__prg {
+.radio__prg {
     line-height: 22px;
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text_gray);
 }
 
-.checkbox__descr--lices {
+.radio__descr--lices {
+    margin-bottom: 8px;
     line-height: 22px;
     font-size: 16px;
     font-style: italic;
@@ -1024,81 +1009,100 @@ p {
     color: var(--color-text_gray);
 }
 
+.playlist__slider {
+    display: none;
+}
 
-/* ------------checkbox------------- */
 
-.playlists__list {
+/* ------------radio------------- */
+
+.radio__list {
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    /* padding: 0; */
+    margin-bottom: 22px;
+    gap: 19px;
 }
 
-.checkbox-wrap {
-    /* margin-bottom: 58px; */
-    /* padding: 21px 29px 29px 30px; */
-    /* border-radius: 16px; */
+.radio-wrap {
+    min-width: 346px;
 }
 
-.header__checkbox {
+.radio__header {
     margin-bottom: 10px;
 }
 
-.form-check li:not(:last-child) {
-    /* margin-bottom: 20px; */
-}
-
-.check span {
+.radio span {
     display: flex;
     align-items: center;
     position: relative;
     cursor: pointer;
 }
 
-.check input {
+.radio input {
     display: block;
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.check span::before {
+.radio span::before {
     content: "";
-    /* margin-right: 9px; */
     display: block;
     position: relative;
     left: 0;
     top: 0;
-    width: 15px;
-    height: 15px;
-    border: 1px solid #999999;
-    border-radius: 3px;
+    width: 27px;
+    height: 27px;
+    border: 2px solid var(--color-text_gray);
+    border-radius: 100px;
 }
 
-.check span::after {
+.radio span::after {
     content: "";
     display: none;
     position: absolute;
     top: 50%;
     left: 0;
-    margin-top: -8px;
-    width: 15px;
-    height: 15px;
-    background-image: url("data:image/svg+xml,%3Csvg width='8' height='7' viewBox='0 0 8 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 3.47742L3.10291 5.58033L7.58033 1.10291' stroke='%23CCB26E'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
+    border: none;
 }
 
-.check input:checked+span::after {
+.radio input:checked+span::after {
     display: block;
 }
 
-.check input:focus+span::before {
-    border-color: #FF5C00;
+.radio input:focus-visible+span::before {
+    border-color: var(--color-primary);
+    background-color: var(--color-shade_gray);
 }
 
+.radio input:hover+span::before {
+    border-color: var(--color-primary);
+}
 
-/* ----------------- */
+.radio input:active+span::before {
+    width: 27px;
+    height: 27px;
+    border: none;
+    background-image: url("../img/radio-checked.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.radio__border::before {
+    content: "";
+    left: 0;
+    bottom: 0;
+    margin-bottom: 38px;
+    display: block;
+    width: 350px;
+    height: 1px;
+    background-color: var(--color-shade_gray);
+}
+
+.radio__block-shadow {
+    display: none;
+}
 
 .playlist__cards {
     display: flex;
@@ -1113,7 +1117,7 @@ p {
 }
 
 .playlist__inner {
-    padding: 16px 12px 16px 16px;
+    padding: 14px 12px 16px 16px;
     border: 1px solid var(--color-light_color);
 }
 
