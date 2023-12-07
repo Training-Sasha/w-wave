@@ -261,9 +261,10 @@
                     gap: 28px 30px;
                 }
                 .guests__block {
-                    margin-bottom: 30px;
+                    margin-bottom: 28px;
                 }
                 .guests__header {
+                    margin-bottom: 13px;
                     font-size: 24px;
                 }
                 .guests__descr {
@@ -282,7 +283,7 @@
                     height: 30px;
                 }
                 .accordion-item.ac.js-enabled.is-active .ac-text {
-                    padding: 16px 0;
+                    padding: 19px 0;
                 }
                 .guests__inner-img-plug,
                 .guests__inner-img {

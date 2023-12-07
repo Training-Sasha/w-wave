@@ -719,11 +719,11 @@ p {
 }
 
 .guests__block {
-    margin-bottom: 55px;
+    margin-bottom: 50px;
 }
 
 .guests__header {
-    margin-bottom: 12px;
+    margin-bottom: 17px;
     font-weight: 400;
     font-size: 48px;
     line-height: 100%;
@@ -748,7 +748,7 @@ p {
 }
 
 .guests__wrapper {
-    gap: 26px;
+    gap: 27px;
 }
 
 .guests__inner-img-plug {
@@ -758,6 +758,7 @@ p {
 }
 
 .guests__inner-img {
+    margin-bottom: 10px;
     height: auto;
     object-fit: cover;
     aspect-ratio: 350 / 220;
@@ -910,10 +911,6 @@ p {
 
 .ac .ac-trigger::after {
     content: none;
-}
-
-.guests__inner-img {
-    margin-bottom: 12px;
 }
 
 .guests__list {
