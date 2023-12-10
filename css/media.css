@@ -62,6 +62,23 @@
                 .podcast__wrapper {
                     flex: 1 0 auto;
                 }
+                /* ------adv------ */
+                .adv {
+                    padding-bottom: 92px;
+                }
+                .adv__img {
+                    width: 397px;
+                    height: 349px;
+                }
+                .adv__wrap-img {
+                    padding-top: 122px;
+                    flex: 1 0 397px;
+                }
+                .adv__img-svg {
+                    top: 118px;
+                    width: 100px;
+                    height: 100px;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -136,6 +153,26 @@
                 }
                 .podcast__list {
                     grid-template-columns: 1fr;
+                }
+                /* ------adv------ */
+                .adv {
+                    padding-top: 54px;
+                }
+                .adv__wrapper {
+                    flex-direction: column;
+                    gap: 49px;
+                }
+                .adv__wrap-img {
+                    padding: 0;
+                }
+                .adv__img {
+                    width: auto;
+                    height: auto;
+                }
+                .adv__img-svg {
+                    top: 0;
+                    width: 160px;
+                    height: 160px;
                 }
             }
             /* -------------------------------320px------------------------------- */
@@ -292,4 +329,44 @@
                 .podcast__btn-play {
                     align-self: center;
                 }
+                /* ------adv------ */
+                .adv__wrapper {
+                    gap: 30px;
+                }
+                .adv__header {
+                    margin-bottom: 41px;
+                    font-size: 24px;
+                }
+                .adv__prg {
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 160%;
+                }
+                .adv__price {
+                    font-size: 24px;
+                    font-weight: 500;
+                }
+                .adv__btn {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 16px;
+                }
+                .adv__img-svg {
+                    width: 62px;
+                    height: 62px;
+                }
+                .adv__wrap-img {
+                    flex-basis: 231px;
+                }
+                .adv__prg-two {
+                    margin-bottom: 5px;
+                }
+                .adv__price {
+                    margin-bottom: 17px;
+                }
+                .adv__btn {
+                    padding: 13px 13px;
+                }
             }
+            
+            @media (max-width: 320px) {}
