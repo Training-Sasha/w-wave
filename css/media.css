@@ -80,6 +80,26 @@
                 .guests__wrapper {
                     gap: 29px;
                 }
+                /* ------about------ */
+                .about {
+                    padding-top: 90px;
+                }
+                .about__header {
+                    margin-bottom: 17px;
+                }
+                .about__wrapper {
+                    margin-bottom: 30px;
+                }
+                .about__block-svg--one {
+                    display: none;
+                }
+                .input-text {
+                    width: 824px;
+                }
+                .input-name,
+                .input-mail {
+                    width: 397px;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -171,6 +191,29 @@
                 .guests__text {
                     max-width: 398px;
                 }
+                /* ------about------ */
+                .about__wrapper {
+                    flex-direction: column;
+                }
+                .input-text,
+                .input-name,
+                .input-mail {
+                    width: 540px;
+                }
+                .about__block-two {
+                    display: none;
+                }
+                .about__block-two--768 {
+                    display: block;
+                    display: flex;
+                    justify-content: right;
+                    position: relative;
+                }
+                .about__svg--one {
+                    position: absolute;
+                    right: calc(100% - 74%);
+                }
+                .about__svg--two {}
             }
             /* -------------------------------320px------------------------------- */
             
@@ -262,8 +305,57 @@
                 .ac-text {
                     grid-template-columns: repeat(2, minmax(160px, 1fr));
                 }
+                /* ------about------ */
+                .about {
+                    padding: 54px 0 52px 0;
+                }
+                .about__wrapper {
+                    margin-bottom: 27px;
+                }
+                .about__header {
+                    margin-bottom: 12px;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                .about__descr {
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                .about__prg {
+                    font-size: 14px;
+                    line-height: 160%;
+                }
+                .about__swiper-name {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .about__swiper-descr {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                .input {
+                    font-size: 16px;
+                }
+                .form__btn {
+                    font-size: 16px;
+                }
+                .application-checkbox .checkbox-txt {
+                    font-size: 9px;
+                }
+                .input-text,
+                .input-name,
+                .input-mail {
+                    width: 256px;
+                }
+                .form {
+                    flex-direction: column;
+                }
+                .about__block-two--768 {
+                    display: none;
+                }
             }
-
+            
             @media (max-width: 480px) {
                 /* ------guests------ */
                 .guests {
@@ -317,7 +409,7 @@
                     padding: 7px 13px;
                 }
             }
-
+            
             @media (max-width: 440px) {
                 /* ------podcast------ */
                 .podcast {
