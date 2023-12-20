@@ -1050,10 +1050,14 @@ p {
     line-height: 160%;
 }
 
+.swiper__wrap {
+    position: relative;
+}
+
 .swiper-slide {
     display: flex;
     flex-direction: column;
-    flex: 1 0 255px;
+    /* flex: 1 0 255px; */
 }
 
 .swiper__pic {
@@ -1061,6 +1065,8 @@ p {
 }
 
 .swiper-img {
+    /* width: 100%; */
+    height: auto;
     object-fit: cover;
 }
 
@@ -1083,9 +1089,9 @@ p {
 }
 
 .swiper {
-    position: relative;
+    /* position: relative; */
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 38px;
     /* padding: 0 327px; */
     cursor: pointer;
 }
@@ -1096,18 +1102,18 @@ p {
 
 .about__swiper-btn {
     position: absolute;
-    top: 50%;
-    z-index: 1;
+    /* top: 50%; */
+    /* z-index: 1; */
 }
 
 .about__swiper-btn--prev {
-    left: -20px;
-    z-index: 2;
+    left: -78px;
+    top: 29%;
 }
 
 .about__swiper-btn--next {
-    right: -10px;
-    z-index: 2;
+    right: -77px;
+    top: 29%;
 }
 
 
@@ -1147,8 +1153,9 @@ p {
 .input-text {
     width: 920px;
     height: 150px;
-    padding: 30px 10px 10px 32px;
+    padding: 30px 32px;
     border-radius: 30px;
+    resize: none;
 }
 
 .input-name,
@@ -1215,7 +1222,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 33px;
+    gap: 330px;
     cursor: pointer;
 }
 

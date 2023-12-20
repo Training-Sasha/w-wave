@@ -10,16 +10,16 @@ let swiper = new Swiper(".mySwiper", {
         nextEl: ".about__swiper-btn--next",
         prevEl: ".about__swiper-btn--prev"
     },
-    breackpoints: {
+    breakpoints: {
         320: {
             slidesPerView: 2,
-            spaceBetween: 30,
+            spaceBetween: 20,
         },
         1024: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
-        2920: {
+        1920: {
             slidesPerView: 4,
             spaceBetween: 30,
         },

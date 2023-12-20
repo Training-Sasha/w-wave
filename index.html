@@ -1165,78 +1165,7 @@
 
 
                 </div>
-                <div class="swiper mySwiper">
-                    <button class="about__swiper-btn about__swiper-btn--next btn-reset">
-                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="24" cy="24" r="20" transform="rotate(-90 24 24)" stroke="#A1A6B4"
-                                stroke-width="2" />
-                            <path d="M22 32L30 24L22 16" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                        </svg>
-                    </button>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-1-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-1.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-1-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-1.jpg" alt="фото Дмитрий Гутенберг">
-                            </picture>
-                            <p class="about__swiper-name">Дмитрий Гутенберг</p>
-                            <p class="about__swiper-descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-2-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-2.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-2-tab.jpg" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-2.jpg" alt="фото Анна Васильева">
-                            </picture>
-                            <p class="about__swiper-name">Анна Васильева</p>
-                            <p class="about__swiper-descr">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-3-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-3.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-3-tab.jpg" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-3.jpg" alt="фото Пётр Дмитриевский">
-                            </picture>
-                            <p class="about__swiper-name">Пётр Дмитриевский</p>
-                            <p class="about__swiper-descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-4-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-4.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-4-tab.jpg" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-4.jpg" alt="фото Татьяна Флеганова">
-                            </picture>
-                            <p class="about__swiper-name">Татьяна Флеганова</p>
-                            <p class="about__swiper-descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
-                            </p>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-5-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-5.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-5-tab.jpg" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-5.jpg" alt="фото Фёдор Прокопьев">
-                            </picture>
-                            <p class="about__swiper-name">Фёдор Прокопьев</p>
-                            <p class="about__swiper-descr">Привет! Я&nbsp;фотограф, музыкант, ведущий</p>
-                        </div>
-                        <div class="swiper-slide">
-                            <picture class="swiper__pic">
-                                <source srcset="img/guest-6-mob.jpg" media="(max-width: 320px)">
-                                <source srcset="img/guest-6.jpg" media="(max-width: 768px)">
-                                <source srcset="img/guest-6-tab.jpg" media="(max-width: 1200px)">
-                                <img class="swiper-img" width="255" height="255" src="img/guest-6.jpg" alt="фото Светлана Кортнева">
-                            </picture>
-                            <p class="about__swiper-name">Светлана Кортнева</p>
-                            <p class="about__swiper-descr">Художник-оформитель. Оформляю</p>
-                        </div>
-                    </div>
+                <div class="swiper__wrap">
                     <button class="about__swiper-btn about__swiper-btn--prev btn-reset">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="21" cy="21" r="20" transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 45 45)"
@@ -1244,18 +1173,91 @@
                             <path d="M26 32L18 24L26 16" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
                         </svg>
                     </button>
-                    <!-- <div class="swiper-pagination"></div> -->
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-1-mob.jpg" width="110" height="110" media="(max-width: 767px)">
+                                    <source srcset="img/guest-1.jpg" width="255" height="255" media="(max-width: 768px)">
+                                    <source srcset="img/guest-1-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-1.jpg" alt="фото Дмитрий Гутенберг">
+                                </picture>
+                                <p class="about__swiper-name">Дмитрий Гутенберг</p>
+                                <p class="about__swiper-descr">Эксперт (ну, почти) по&nbsp;всем вопросам (почти)</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-2-mob.jpg" width="113" height="113" media="(max-width: 767px)">
+                                    <source srcset="img/guest-2.jpg" width="255" height="255" media="(max-width: 768px)">
+                                    <source srcset="img/guest-2-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-2.jpg" alt="фото Анна Васильева">
+                                </picture>
+                                <p class="about__swiper-name">Анна Васильева</p>
+                                <p class="about__swiper-descr">Как я&nbsp;здесь оказалась? А&nbsp;главное&nbsp;&mdash; зачем?
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-3-mob.jpg" width="113" height="113" media="(max-width: 767px)">
+                                    <source srcset="img/guest-3.jpg" width="255" height="255" media="(max-width: 768px)">
+                                    <source srcset="img/guest-3-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-3.jpg" alt="фото Пётр Дмитриевский">
+                                </picture>
+                                <p class="about__swiper-name">Пётр Дмитриевский</p>
+                                <p class="about__swiper-descr">Господа! Внимание! Благодарю за&nbsp;внимание!</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-4-mob.jpg" width="113" height="113" media="(max-width: 767px)">
+                                    <source srcset="img/guest-4.jpg" width="255" height="255" media="(max-width: 768px)">
+                                    <source srcset="img/guest-4-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-4.jpg" alt="фото Татьяна Флеганова">
+                                </picture>
+                                <p class="about__swiper-name">Татьяна Флеганова</p>
+                                <p class="about__swiper-descr">Одна я&nbsp;в&nbsp;пальто стою красивая, а&nbsp;вокруг...
+                                </p>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-5-mob.jpg" width="113" height="113" media="(max-width: 767px)">
+                                    <source srcset="img/guest-5.jpg" width="255" height="255" media="(max-width: 1024px)">
+                                    <source srcset="img/guest-5-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-5.jpg" alt="фото Фёдор Прокопьев">
+                                </picture>
+                                <p class="about__swiper-name">Фёдор Прокопьев</p>
+                                <p class="about__swiper-descr">Привет! Я&nbsp;фотограф, музыкант, ведущий</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <picture class="swiper__pic">
+                                    <source srcset="img/guest-6-mob.jpg" width="113" height="113" media="(max-width: 767px)">
+                                    <source srcset="img/guest-6.jpg" width="255" height="255" media="(max-width: 768px)">
+                                    <source srcset="img/guest-6-tab.jpg" width="414" height="343" media="(max-width: 1200px)">
+                                    <img class="swiper-img" width="255" height="255" src="img/guest-6.jpg" alt="фото Светлана Кортнева">
+                                </picture>
+                                <p class="about__swiper-name">Светлана Кортнева</p>
+                                <p class="about__swiper-descr">Художник-оформитель. Оформляю</p>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                    </div>
+                    <button class="about__swiper-btn about__swiper-btn--next btn-reset">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="24" cy="24" r="20" transform="rotate(-90 24 24)" stroke="#A1A6B4"
+                                stroke-width="2" />
+                            <path d="M22 32L30 24L22 16" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
+                        </svg>
+                    </button>
                 </div>
-
                 <form class="form flex" action="">
                     <div class="input-box">
-                        <input class="input text input-text" type="text" name="text" data-validate-field="text" data-validate-rules="text" placeholder="Что скажете?" required>
+                        <textarea class="input text input-text" type="text" name="text" id="" cols="30" rows="10" data-validate-field="text" data-validate-rules="text" placeholder="Что скажете?" required></textarea>
+                        <!-- <input class="input text input-text" type="text" name="text" data-validate-field="text" data-validate-rules="text" placeholder="Что скажете?" required> -->
                     </div>
                     <div class="input-box">
-                        <input class="input name input-name" type="text" name="name" data-validate-field="name" placeholder="Имя*" required>
+                        <input class="input name input-name" type="text" name="name" data-validate-field="name" placeholder="Имя" required>
                     </div>
                     <div class="input-box">
-                        <input class="input mail input-mail" type="email" name="email" data-validate-field="mail" placeholder="E-mail*" required>
+                        <input class="input mail input-mail" type="email" name="email" data-validate-field="mail" placeholder="E-mail" required>
                     </div>
                     <div class="form__wrapp-checkbox">
                         <button class="form__btn btn-reset" type="submit">Оправить</button>
@@ -1343,9 +1345,10 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
-    <script src="js/accordion.min.js"></script>
-    <script src="libs/swiper/swiper.js"></script>
-    <!-- <script src="libs/input/inputmask.min.js"></script> -->
+    <script src="libs/accordion/accordion.min.js"></script>
+    <script src="libs/input-validate/just-validate.min.js"></script>
+    <script src="libs/input/inputmask.min.js"></script>
+    <script src="js/swiper/swiper.js"></script>
     <script defer src="js/script.js"></script>
 </body>
 

@@ -476,4 +476,33 @@
                 .podcast__btn-play {
                     align-self: center;
                 }
+                /* ------about------ */
+                .swiper-slide.swiper-slide-active {
+                    width: 113px;
+                }
+                .swiper-img {
+                    width: 113px;
+                }
+                .swiper__pic {
+                    margin-bottom: 12px;
+                }
+                .input-text {
+                    border-radius: 20px;
+                }
+                .input-name,
+                .input-mail {
+                    height: 48px;
+                }
+                /* .form {
+                    gap: 29px;
+                } */
+                .input-text {
+                    padding: 12px 22px;
+                }
+                .form__btn {
+                    padding: 17px 48px;
+                }
+                .form__wrapp-checkbox {
+                    gap: 21px;
+                }
             }
