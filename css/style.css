@@ -25,7 +25,6 @@ img {
 
 body {
     margin: 0;
-    min-width: 320px;
     font-family: 'Muller', sans-serif;
     overflow-x: hidden;
 }

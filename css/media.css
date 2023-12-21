@@ -100,6 +100,14 @@
                 .input-mail {
                     width: 397px;
                 }
+                .about__swiper-btn--next {
+                    right: -68px;
+                    top: 31%;
+                }
+                .about__swiper-btn--prev {
+                    left: -69px;
+                    top: 31%;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
