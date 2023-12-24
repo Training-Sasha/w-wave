@@ -1064,8 +1064,10 @@ p {
 
 .footer__menu {
     display: grid;
-    grid-template-columns: 76px 86px 65px;
-    gap: 14px 109px;
+    /* grid-template-columns: 76px 86px 65px; */
+    gap: 19px 109px;
+    grid-template-columns: repeat(3, auto);
+    /* gap: 24px 24px; */
 }
 
 .footer__descr {

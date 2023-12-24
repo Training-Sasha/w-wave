@@ -189,7 +189,7 @@
                     gap: 73px;
                 }
                 .footer__menu {
-                    gap: 24px 157px;
+                    gap: 28px 157px;
                 }
                 .footer__block {
                     padding-top: 79px;
@@ -428,5 +428,12 @@
                 }
                 .podcast__btn-play {
                     align-self: center;
+                }
+                /* ------footer------ */
+                .footer__block {
+                    padding-top: 9px;
+                }
+                .footer__descr {
+                    font-size: 12px;
                 }
             }
