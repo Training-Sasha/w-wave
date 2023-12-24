@@ -80,6 +80,30 @@
                 .guests__wrapper {
                     gap: 29px;
                 }
+                /* ------about------ */
+                .about {
+                    padding-top: 90px;
+                }
+                .about__header {
+                    margin-bottom: 17px;
+                }
+                .about__wrapper {
+                    margin-bottom: 30px;
+                }
+                .about__block-svg--one {
+                    display: none;
+                }
+                .form {
+                    width: 100%;
+                }
+                .about__swiper-btn--next {
+                    right: -68px;
+                    top: 29%;
+                }
+                .about__swiper-btn--prev {
+                    left: -69px;
+                    top: 29%;
+                }
             }
             /* -------------------------------768px-------------------------------*/
             
@@ -170,6 +194,29 @@
                 }
                 .guests__text {
                     max-width: 398px;
+                }
+                /* ------about------ */
+                .about__wrapper {
+                    flex-direction: column;
+                    position: relative;
+                }
+                .input-box {
+                    flex-direction: column;
+                }
+                .about__block-two {
+                    display: none;
+                }
+                .about__block-two--768 {
+                    display: block;
+                    display: flex;
+                    justify-content: right;
+                }
+                .about__svg--one {
+                    position: absolute;
+                    left: -114px;
+                }
+                .swiper-img {
+                    /* width: inherit; */
                 }
             }
             /* -------------------------------320px------------------------------- */
@@ -262,8 +309,55 @@
                 .ac-text {
                     grid-template-columns: repeat(2, minmax(160px, 1fr));
                 }
+                /* ------about------ */
+                .about {
+                    padding: 54px 0 52px 0;
+                }
+                .about__wrapper {
+                    margin-bottom: 27px;
+                }
+                .about__header {
+                    margin-bottom: 12px;
+                    font-size: 24px;
+                    line-height: 24px;
+                }
+                .about__descr {
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                    line-height: 21px;
+                }
+                .about__prg {
+                    font-size: 14px;
+                    line-height: 160%;
+                }
+                .about__swiper-name {
+                    font-size: 14px;
+                    line-height: 18px;
+                }
+                .about__swiper-descr {
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+                .input {
+                    font-size: 16px;
+                }
+                .form__btn {
+                    font-size: 16px;
+                }
+                .application-checkbox .checkbox-txt {
+                    font-size: 9px;
+                }
+                .form {
+                    flex-direction: column;
+                }
+                .about__block-two--768 {
+                    display: none;
+                }
+                .about__swiper-btn {
+                    display: none;
+                }
             }
-
+            
             @media (max-width: 480px) {
                 /* ------guests------ */
                 .guests {
@@ -317,7 +411,7 @@
                     padding: 7px 13px;
                 }
             }
-
+            
             @media (max-width: 440px) {
                 /* ------podcast------ */
                 .podcast {
@@ -383,5 +477,38 @@
                 }
                 .podcast__btn-play {
                     align-self: center;
+                }
+                /* ------about------ */
+                .swiper__wrap {
+                    padding: 0 0 0 32px;
+                }
+                .swiper-slide.swiper-slide-active {
+                    width: 113px;
+                }
+                .swiper-img {
+                    width: 113px;
+                }
+                .swiper__pic {
+                    margin-bottom: 12px;
+                }
+                .input-text {
+                    border-radius: 20px;
+                }
+                .input-name,
+                .input-mail {
+                    height: 48px;
+                    padding: 9px 10px 9px 21px;
+                }
+                .input-text {
+                    padding: 12px 22px;
+                }
+                .form__btn {
+                    padding: 17px 48px;
+                }
+                .form__wrapp-checkbox {
+                    gap: 21px;
+                }
+                .swiper-slide {
+                    width: 113px;
                 }
             }

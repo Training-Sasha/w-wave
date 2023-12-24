@@ -57,3 +57,46 @@ document.addEventListener('DOMContentLoaded', () => { // Структура ст
     tabs() // вызываем основную функцию
 
 })
+
+// form_validation
+
+const selector = document.querySelector("input[type='tel']");
+
+const im = new Inputmask("+7 (999)-999-99-99");
+im.mask(selector);
+
+new JustValidate(".form", {
+    rules: {
+        name: {
+            required: true,
+            minLength: 2,
+        },
+        tel: {
+            required: true,
+            function: (name, value) => {
+                const phone = selector.inputmask.unmaskedvalue();
+                return Number(phone) && phone.length === 10;
+            },
+        },
+        mail: {
+            required: "Вы не ввели e-mail",
+            email: true,
+        },
+    },
+
+    messages: {
+        mail: {
+            required: "Вы не ввели e-mail",
+            email: "Введите корректный e-mail",
+        },
+        name: {
+            required: "Вы не ввели имя",
+            minLenght: "Имя должно содержать минимум 2 символа",
+        },
+        tel: {
+            required: "Вы не ввели телефон",
+            function: "Недостаточноное колличество символов",
+        },
+    },
+    colorWrong: "#FF5C00",
+});
