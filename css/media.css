@@ -93,20 +93,16 @@
                 .about__block-svg--one {
                     display: none;
                 }
-                .input-text {
-                    width: 824px;
-                }
-                .input-name,
-                .input-mail {
-                    width: 397px;
+                .form {
+                    width: 100%;
                 }
                 .about__swiper-btn--next {
                     right: -68px;
-                    top: 31%;
+                    top: 29%;
                 }
                 .about__swiper-btn--prev {
                     left: -69px;
-                    top: 31%;
+                    top: 29%;
                 }
             }
             /* -------------------------------768px-------------------------------*/
@@ -202,11 +198,10 @@
                 /* ------about------ */
                 .about__wrapper {
                     flex-direction: column;
+                    position: relative;
                 }
-                .input-text,
-                .input-name,
-                .input-mail {
-                    width: 540px;
+                .input-box {
+                    flex-direction: column;
                 }
                 .about__block-two {
                     display: none;
@@ -215,13 +210,14 @@
                     display: block;
                     display: flex;
                     justify-content: right;
-                    position: relative;
                 }
                 .about__svg--one {
                     position: absolute;
-                    right: calc(100% - 74%);
+                    left: -114px;
                 }
-                .about__svg--two {}
+                .swiper-img {
+                    /* width: inherit; */
+                }
             }
             /* -------------------------------320px------------------------------- */
             
@@ -351,15 +347,13 @@
                 .application-checkbox .checkbox-txt {
                     font-size: 9px;
                 }
-                .input-text,
-                .input-name,
-                .input-mail {
-                    width: 256px;
-                }
                 .form {
                     flex-direction: column;
                 }
                 .about__block-two--768 {
+                    display: none;
+                }
+                .about__swiper-btn {
                     display: none;
                 }
             }
@@ -485,6 +479,9 @@
                     align-self: center;
                 }
                 /* ------about------ */
+                .swiper__wrap {
+                    padding: 0 0 0 32px;
+                }
                 .swiper-slide.swiper-slide-active {
                     width: 113px;
                 }
@@ -500,10 +497,8 @@
                 .input-name,
                 .input-mail {
                     height: 48px;
+                    padding: 9px 10px 9px 21px;
                 }
-                /* .form {
-                    gap: 29px;
-                } */
                 .input-text {
                     padding: 12px 22px;
                 }
@@ -512,5 +507,8 @@
                 }
                 .form__wrapp-checkbox {
                     gap: 21px;
+                }
+                .swiper-slide {
+                    width: 113px;
                 }
             }
