@@ -25,7 +25,6 @@ img {
 
 body {
     margin: 0;
-    min-width: 320px;
     font-family: Muller, sans-serif;
     overflow-x: hidden;
 }
@@ -1036,7 +1035,7 @@ p {
 }
 
 .radio__sub-header {
-    margin-bottom: 9px;
+    margin-bottom: 10px;
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text_gray);
@@ -1045,7 +1044,7 @@ p {
 .radio__name {
     font-size: 20px;
     font-weight: 400;
-    gap: 15px;
+    gap: 16px;
 }
 
 .radio__prg {
@@ -1079,7 +1078,7 @@ p {
     display: flex;
     flex-direction: column;
     margin-bottom: 22px;
-    gap: 19px;
+    gap: 20px;
 }
 
 .radio-wrap {
@@ -1108,10 +1107,10 @@ p {
     content: "";
     display: block;
     position: relative;
-    left: 0;
+    left: 2px;
     top: 0;
-    width: 27px;
-    height: 27px;
+    width: 26px;
+    height: 26px;
     border: 2px solid var(--color-text_gray);
     border-radius: 100px;
 }
@@ -1126,8 +1125,9 @@ p {
 }
 
 .radio-input:checked+.radio__name::before {
-    width: 27px;
-    height: 27px;
+    left: 1px;
+    width: 26px;
+    height: 26px;
     background-color: var(--color-primary);
     border: 8px solid var(--color-primary);
     position: relative;
@@ -1168,48 +1168,44 @@ p {
     gap: 30px;
 }
 
-.playlist__img {
-    /* position: relative; */
-}
-
 .playlist__card {
-    /* position: relative; */
     cursor: pointer;
 }
 
 .playlist__card-wrapper {
     position: relative;
+    background: var(--color-black);
 }
 
-
-/* .playlist-btn {
-
+.playlist__btn {
+    display: none;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    display: block;
-    width: 48px;
-    height: 48px;
-    background-image: url(../img/playlist-play.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-
-} */
+    top: 0;
+    left: 0;
+    z-index: 3;
+    top: calc(50% - 21px);
+    left: calc(50% - 21px);
+}
 
 .playlist__card:focus-visible {
     outline: none;
 }
 
-.playlist__card:focus-visible .playlist__card-wrapper {
-    background-image: url(../img/playlist-play.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+.playlist__card:focus-visible .playlist__img {
+    position: relative;
+    opacity: 0.2;
+    z-index: 2;
 }
 
-.playlist__card:focus-visible .playlist__img,
-.playlist__svg {
-    opacity: 0.8;
+.playlist__card:focus-visible .playlist__bg {
+    inset: 0;
+    position: absolute;
+    z-index: 0;
     background: var(--color-black);
+}
+
+.playlist__card:focus-visible .playlist__btn {
+    display: block;
 }
 
 .playlist__card:focus-visible .playlist__inner {
@@ -1221,29 +1217,21 @@ p {
     color: var(--color-black);
 }
 
-.playlist__card:hover .playlist__card-wrapper {
-    background-image: url(../img/playlist-play.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.playlist__card:hover .playlist__card-wrapper-2 {
-    opacity: 0.8;
-    background: var(--color-black);
-    /* background: rgba(var(--color-black), 0.8); */
-    /* background-color: rgba(0, 0, 0, 0.8); */
-}
-
-
-/* .playlist__card:hover .playlist__svg {
-    opacity: 0.8;
-    background: var(--color-black);
-} */
-
 .playlist__card:hover .playlist__img {
-    /* opacity: 0.8;
-    background: var(--color-black); */
-    /* background: rgba(0, 0, 0, 0.8); */
+    position: relative;
+    opacity: 0.2;
+    z-index: 2;
+}
+
+.playlist__card:hover .playlist__bg {
+    inset: 0;
+    position: absolute;
+    z-index: 0;
+    background: var(--color-black);
+}
+
+.playlist__card:hover .playlist__btn {
+    display: block;
 }
 
 .playlist__card:hover .playlist__inner {
@@ -1259,15 +1247,16 @@ p {
     color: var(--color-white);
 }
 
-.playlist__card:active .playlist__card-wrapper {
-    background-image: url(../img/playlist-play.svg);
-    background-repeat: no-repeat;
-    background-position: center center;
+.playlist__card:active .playlist__img {
+    position: relative;
+    opacity: 0.2;
+    z-index: 2;
 }
 
-.playlist__card:active .playlist__img,
-.playlist__svg {
-    opacity: 0.8;
+.playlist__card:active .playlist__bg {
+    inset: 0;
+    position: absolute;
+    z-index: 0;
     background: var(--color-black);
 }
 
@@ -1300,5 +1289,5 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 10;
+    z-index: 1;
 }
