@@ -97,7 +97,7 @@
                 }
             }
             
-            @media (max-width: 1023px) {
+            @media (max-width: 1024px) {
                 .broadcasts__inner:nth-child(2) {
                     display: none;
                 }
@@ -148,6 +148,9 @@
                     align-content: flex-start;
                     gap: 20px 35px;
                     margin-bottom: 31px;
+                }
+                .playlists__wrap {
+                    flex-direction: column;
                 }
                 .playlist__card-wrapper {
                     aspect-ratio: 1 / 1;
@@ -413,6 +416,9 @@
                 .radio__sub-header {
                     margin-bottom: 4px;
                     font-size: 12px;
+                }
+                .playlists__wrap {
+                    flex: 1 0 auto;
                 }
                 .playlist__img {
                     width: 100%;
