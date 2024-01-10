@@ -1028,7 +1028,7 @@ p {
 /* ------adv------ */
 
 .adv {
-    padding-top: 100px;
+    padding-top: 94px;
     padding-bottom: 140px;
     background-color: var( --color-light_black);
 }
@@ -1036,7 +1036,7 @@ p {
 .adv__wrapper {
     position: relative;
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 .adv__wrap {
@@ -1044,7 +1044,7 @@ p {
 }
 
 .adv__header {
-    margin-bottom: 48px;
+    margin-bottom: 18px;
     font-size: 48px;
     font-weight: 400;
     line-height: 100%;
@@ -1060,7 +1060,12 @@ p {
 }
 
 .adv__prg-one {
+    padding-top: 30px;
     margin-bottom: 12px;
+    background-image: url(../img/wave-svg.svg);
+    background-size: 33px;
+    background-repeat: repeat-x;
+    background-position: 0 top;
 }
 
 .adv__prg-two {
