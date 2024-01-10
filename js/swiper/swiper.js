@@ -15,9 +15,13 @@ let swiper = new Swiper(".mySwiper", {
             slidesPerView: 2,
             spaceBetween: 15,
         },
+        440: {
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
         768: {
             slidesPerView: 2,
-            spaceBetween: 25,
+            spaceBetween: 27,
         },
         1024: {
             slidesPerView: 2,

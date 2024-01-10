@@ -82,7 +82,7 @@
                 }
                 /* ------about------ */
                 .about {
-                    padding-top: 90px;
+                    padding: 90px 0 93px 0;
                 }
                 .about__header {
                     margin-bottom: 17px;
@@ -97,12 +97,12 @@
                     width: 100%;
                 }
                 .about__swiper-btn--next {
-                    right: -68px;
-                    top: 29%;
+                    right: 31px;
+                    top: 31%;
                 }
                 .about__swiper-btn--prev {
-                    left: -69px;
-                    top: 29%;
+                    left: 31px;
+                    top: 31%;
                 }
             }
             /* -------------------------------768px-------------------------------*/
@@ -196,6 +196,9 @@
                     max-width: 398px;
                 }
                 /* ------about------ */
+                .swiper {
+                    margin-bottom: 32px;
+                }
                 .about__wrapper {
                     flex-direction: column;
                     position: relative;
@@ -216,7 +219,16 @@
                     left: -114px;
                 }
                 .swiper-img {
-                    /* width: inherit; */
+                    width: auto;
+                    height: auto;
+                }
+                .about__swiper-btn--prev {
+                    left: 46px;
+                    top: 29%;
+                }
+                .about__swiper-btn--next {
+                    right: 46px;
+                    top: 29%;
                 }
             }
             /* -------------------------------320px------------------------------- */
@@ -356,6 +368,14 @@
                 .about__swiper-btn {
                     display: none;
                 }
+                .about__swiper-btn--next {
+                    right: 1px;
+                    top: 31%;
+                }
+                .about__swiper-btn--prev {
+                    left: 1px;
+                    top: 31%;
+                }
             }
             
             @media (max-width: 480px) {
@@ -479,9 +499,6 @@
                     align-self: center;
                 }
                 /* ------about------ */
-                .swiper__wrap {
-                    padding: 0 0 0 32px;
-                }
                 .swiper-slide.swiper-slide-active {
                     width: 113px;
                 }
@@ -510,5 +527,22 @@
                 }
                 .swiper-slide {
                     width: 113px;
+                }
+                /* ------about------ */
+                .swiper {
+                    overflow: visible;
+                }
+            }
+            
+            @media (max-width: 320px) {
+                /* ------about------ */
+                .swiper {
+                    margin-bottom: 29px;
+                }
+                .input-box {
+                    gap: 34px;
+                }
+                .form__btn {
+                    padding: 17px 44px;
                 }
             }

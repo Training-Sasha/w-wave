@@ -84,14 +84,6 @@ p {
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: url(../fonts/OpenSans-Regular.woff2), url(../fonts/OpenSans-Regular.woff);
-    font-display: swap;
-    font-weight: 400;
-    font-style: normal;
-}
-
 .btn-reset {
     padding: 0;
     border: none;
@@ -1088,7 +1080,7 @@ p {
 
 .swiper {
     margin: 0;
-    margin-bottom: 32px;
+    margin-bottom: 38px;
     cursor: pointer;
 }
 
@@ -1097,12 +1089,12 @@ p {
 }
 
 .about__swiper-btn--prev {
-    left: -78px;
+    left: 22px;
     top: 29%;
 }
 
 .about__swiper-btn--next {
-    right: -77px;
+    right: 22px;
     top: 29%;
 }
 
@@ -1165,7 +1157,7 @@ p {
 }
 
 .form__btn {
-    padding: 25px 59px;
+    padding: 25px 54px;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -1221,7 +1213,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
+    gap: 32px;
     cursor: pointer;
 }
 
