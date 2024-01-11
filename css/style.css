@@ -1180,11 +1180,11 @@ p {
 .playlist__btn {
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    top: calc(50% - 21px);
     left: calc(50% - 21px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
 }
 
 .playlist__card:focus-visible {
