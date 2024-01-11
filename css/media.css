@@ -499,9 +499,9 @@
                     align-self: center;
                 }
                 /* ------about------ */
-                .swiper-slide.swiper-slide-active {
+                /* .swiper-slide.swiper-slide-active {
                     width: 113px;
-                }
+                } */
                 .swiper-img {
                     width: 113px;
                 }
