@@ -1184,24 +1184,25 @@ p {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+}
+
+.playlist__img {
+    position: relative;
+}
+
+.playlist__bg {
+    position: absolute;
+    background: var(--color-black);
+    opacity: 0;
+    inset: 0;
 }
 
 .playlist__card:focus-visible {
     outline: none;
 }
 
-.playlist__card:focus-visible .playlist__img {
-    position: relative;
-    opacity: 0.2;
-    z-index: 2;
-}
-
 .playlist__card:focus-visible .playlist__bg {
-    inset: 0;
-    position: absolute;
-    z-index: 0;
-    background: var(--color-black);
+    opacity: 0.8;
 }
 
 .playlist__card:focus-visible .playlist__btn {
@@ -1217,17 +1218,8 @@ p {
     color: var(--color-black);
 }
 
-.playlist__card:hover .playlist__img {
-    position: relative;
-    opacity: 0.2;
-    z-index: 2;
-}
-
 .playlist__card:hover .playlist__bg {
-    inset: 0;
-    position: absolute;
-    z-index: 0;
-    background: var(--color-black);
+    opacity: 0.8;
 }
 
 .playlist__card:hover .playlist__btn {
@@ -1247,17 +1239,8 @@ p {
     color: var(--color-white);
 }
 
-.playlist__card:active .playlist__img {
-    position: relative;
-    opacity: 0.2;
-    z-index: 2;
-}
-
 .playlist__card:active .playlist__bg {
-    inset: 0;
-    position: absolute;
-    z-index: 0;
-    background: var(--color-black);
+    opacity: 0.8;
 }
 
 .playlist__card:active .playlist__inner {
@@ -1289,5 +1272,4 @@ p {
     position: absolute;
     top: 0;
     right: 0;
-    z-index: 1;
 }
