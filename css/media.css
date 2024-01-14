@@ -499,11 +499,8 @@
                     align-self: center;
                 }
                 /* ------about------ */
-                /* .swiper-slide.swiper-slide-active {
-                    width: 113px;
-                } */
                 .swiper-img {
-                    width: 113px;
+                    width: 100%;
                 }
                 .swiper__pic {
                     margin-bottom: 12px;
@@ -525,9 +522,6 @@
                 .form__wrapp-checkbox {
                     gap: 21px;
                 }
-                .swiper-slide {
-                    width: 113px;
-                }
                 /* ------about------ */
                 .swiper {
                     overflow: visible;
@@ -537,7 +531,7 @@
             @media (max-width: 320px) {
                 /* ------about------ */
                 .swiper {
-                    margin-bottom: 29px;
+                    margin-bottom: 13px;
                 }
                 .input-box {
                     gap: 34px;
@@ -545,4 +539,7 @@
                 .form__btn {
                     padding: 17px 44px;
                 }
+                /* .swiper-img {
+                    width: auto;
+                } */
             }

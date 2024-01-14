@@ -13,11 +13,13 @@ let swiper = new Swiper(".mySwiper", {
     breakpoints: {
         320: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            slideWidth: 113,
+            spaceBetween: 20,
         },
         440: {
             slidesPerView: 3,
-            spaceBetween: 15,
+            slideWidth: 113,
+            spaceBetween: 20,
         },
         768: {
             slidesPerView: 2,
