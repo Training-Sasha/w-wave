@@ -699,6 +699,24 @@
     .swiper {
         overflow: visible;
     }
+    .swiper-slide {
+        width: 113px;
+    }
+    .input-box {
+        gap: 29px;
+    }
+    .input-text {
+        padding: 15px 22px;
+        border-radius: 20px;
+    }
+    .input-name,
+    .input-mail {
+        height: 51px;
+        padding-left: 21px;
+    }
+    .form__wrapp-checkbox {
+        gap: 19px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -793,13 +811,13 @@
     }
     /* ------about------ */
     .swiper {
-        margin-bottom: 13px;
-    }
-    .input-box {
-        gap: 34px;
+        margin-bottom: 9px;
     }
     .form__btn {
         padding: 17px 44px;
+    }
+    .inpuut {
+        border-radius: 20px;
     }
     /* ------footer------ */
     .footer {
