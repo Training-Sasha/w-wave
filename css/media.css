@@ -1,5 +1,16 @@
 /* -------------------------------1024px------------------------------- */
 
+@media (max-width: 1310px) {
+    /* ------playlist------ */
+    .playlist__card {
+        flex: 1 0 30%;
+    }
+
+    .playlist__img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 1200px) {
      :root {
         --padding-aside: 0 100px;
@@ -85,6 +96,63 @@
         justify-content: start;
         gap: 227px;
     }
+
+    /* ------playlist------ */
+    .radio__block-desctop {
+        display: none;
+    }
+
+    .radio__block-shadow {
+        display: block;
+    }
+
+    .playlists__wrap {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .radio__list {
+        height: 165px;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        gap: 20px 35px;
+        margin-bottom: 31px;
+    }
+
+    .playlists__wrap {
+        flex-direction: column;
+    }
+
+    .playlist__card-wrapper {
+        aspect-ratio: 1 / 1;
+    }
+
+    .playlist__cards {
+        padding-top: 0;
+        padding-bottom: 42px;
+    }
+
+    .playlist__card {
+        height: 112px;
+        display: flex;
+        flex: 1 0 30%;
+    }
+
+    .playlist__img {
+        aspect-ratio: 1 / 1;
+        width: 112px;
+        height: 112px;
+    }
+
+    .playlist__svg {
+        left: 0;
+    }
+
+    .playlist__inner {
+        width: 100%;
+        padding: 38px 8px 16px 9px;
+    }
     /* ------about------ */
     .about {
         padding: 90px 0 93px 0;
@@ -126,7 +194,6 @@
         padding: 0;
     }
     .broadcasts__inner-1024 {
-        display: block;
         display: flex;
         justify-content: center;
         position: relative;
@@ -211,7 +278,6 @@
         display: block;
         position: relative;
         top: 0;
-        width: 24px;
         background-color: var(--color-primary);
         border-radius: 4px;
         cursor: pointer;
@@ -223,7 +289,6 @@
         position: absolute;
         top: -11px;
         display: block;
-        width: 24px;
         border-radius: 4px;
         background-color: var(--color-primary);
     }
@@ -234,7 +299,6 @@
         position: absolute;
         top: 10px;
         display: block;
-        width: 24px;
         background-color: var(--color-primary);
         border-radius: 4px;
     }
@@ -545,6 +609,404 @@
     .footer__descr {
         font-size: 12px;
     }
+
+    .radio__border::before {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .broadcasts__inner:nth-child(2) {
+        display: none;
+    }
+
+    .broadcasts__wrapper {
+        flex-direction: column;
+    }
+
+    .broadcasts__wrap {
+        padding-bottom: 0;
+    }
+
+    .broadcasts__wrap-cards {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .broadcasts__inner-1024 {
+        display: block;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .broadcasts__inner-1024::before {
+        content: "";
+        top: 0;
+        width: 100vh;
+        height: 1px;
+        position: absolute;
+        background-color: var(--color-light_color);
+    }
+
+    .broadcasts__prg {
+        width: 256px;
+    }
+}
+
+/* -------------------------------768px-------------------------------*/
+
+@media (max-width: 992px) {
+    :root {
+        --padding-aside: 0 114px;
+    }
+
+    .container {
+        padding: var(--padding-aside);
+    }
+
+    /* ------header------ */
+    .header__list {
+        max-width: 100%;
+    }
+
+    .nav {
+        gap: 26px;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .menu__burger {
+        width: 24px;
+        height: 3px;
+        display: block;
+        position: relative;
+        top: 0;
+        width: 24px;
+        background-color: var(--color-primary);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .menu__burger::before {
+        content: "";
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        top: -11px;
+        display: block;
+        width: 24px;
+        border-radius: 4px;
+        background-color: var(--color-primary);
+    }
+
+    .menu__burger::after {
+        content: "";
+        width: 24px;
+        height: 3px;
+        position: absolute;
+        top: 10px;
+        display: block;
+        width: 24px;
+        background-color: var(--color-primary);
+        border-radius: 4px;
+    }
+
+    .header__play {
+        display: none;
+        border: none;
+    }
+
+    .header__play--768 {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* ------hero------ */
+    .hero__img {
+        display: none;
+    }
+
+    /* ---podcast--- */
+    .podcast__list {
+        flex-direction: column;
+    }
+
+    .podcast__list-item {
+        width: 100%;
+    }
+
+    .podcast__list {
+        grid-template-columns: 1fr;
+    }
+
+    /* ------guests------ */
+    .guests__wrapper {
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .guests__inner-img-plug,
+    .guests__inner-img {
+        width: 540px;
+        height: 220px;
+    }
+
+    .ac-text {
+        gap: 30px 30px;
+    }
+
+    .guests__text {
+        max-width: 398px;
+    }
+
+    /* ------broadcasts------ */
+    .broadcasts__wrapper {
+        gap: 0;
+    }
+
+    .broadcasts__inner {
+        margin-bottom: 45px;
+    }
+
+    .broadcasts__wrap-cards {
+        margin-bottom: 61px;
+    }
+
+    /* ------playlist------ */
+    .radio__list {
+        height: 227px;
+        gap: 34px;
+    }
+
+    .playlist__card {
+        flex: 1 0 31%;
+    }
+}
+
+/* -------------------------------320px------------------------------- */
+
+@media (max-width: 767px) {
+    :root {
+        --padding-aside: 0 32px;
+    }
+
+    .container {
+        padding: var(--padding-aside);
+    }
+
+    /* ------header------ */
+    .header__list {
+        display: none;
+    }
+
+    .header__btn-login {
+        display: none;
+    }
+
+    .header__logo-tablet {
+        width: 87px;
+        height: 10px;
+        display: block;
+    }
+
+    .header__btn-login--320 {
+        display: block;
+        padding: 9.5px 24px;
+        border: 2px solid var(--color-black);
+        border-radius: 77px;
+        font-family: 'Muller';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .header__logo--tablet {
+        height: 54px;
+        justify-content: space-between;
+    }
+
+    .header__wrap-one {
+        height: 50px;
+    }
+
+    .header__wrap-two {
+        height: 43px;
+    }
+
+    .header__play--768 {
+        display: none;
+    }
+
+    .play--320 {
+        display: block;
+    }
+
+    .play-btn--320 {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .play-btn-descr--320 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: normal;
+        color: var(--color-primary);
+    }
+
+    .submenu {
+        gap: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* ------hero------ */
+    .hero__header {
+        height: 55px;
+        gap: 9px;
+        margin-bottom: 0;
+        font-size: 32px;
+        line-height: 32px;
+    }
+
+    .hero__header .hero__header-excerpt {
+        font-size: 32px;
+    }
+
+    .hero__block:nth-child(1) {
+        padding: 23px 0;
+    }
+
+    .hero__prph {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .hero__btn {
+        padding: 15px 45px;
+        font-size: 16px;
+    }
+
+    /* ------playlist------ */
+    .radio__list {
+        height: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+    }
+
+    .radio__list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .radio__name {
+        padding: 7px 23px;
+        border: 2px solid var(--color-primary);
+        border-radius: 77px;
+        white-space: nowrap;
+        color: var(--color-primary);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .radio__name::before {
+        display: none;
+    }
+
+    .radio-input:checked + .radio__name {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
+
+    .radio-input:hover + .radio__name {
+        color: var(--color-white);
+        background-color: var(--color-primary);
+    }
+
+    .radio-input:checked + .radio__name::before {
+        display: none;
+    }
+
+    .radio-input:checked + .radio__name::after {
+        display: none;
+    }
+
+    .radio-wrap {
+        padding-top: 54px;
+    }
+
+    .radio__header {
+        margin-bottom: 6px;
+        font-size: 24px;
+    }
+
+    .radio__sub-header {
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+
+    .playlists__wrap {
+        flex: 1 0 auto;
+    }
+
+    .playlist__img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .playlist__card {
+        height: 100%;
+        flex: 1 0 29%;
+        flex-direction: column;
+    }
+
+    .playlist__inner {
+        padding: 8px 8px 8px 9px;
+    }
+
+    .playlist__name {
+        margin-bottom: 4px;
+        font-size: 12px;
+    }
+
+    .playlist__descr {
+        font-size: 9px;
+    }
+
+    .playlist__svg {
+        right: 0;
+    }
+
+    .playlist__cards {
+        padding-bottom: 31px;
+    }
+
+    .radio__prg {
+        line-height: 16px;
+        font-size: 12px;
+    }
+
+    .radio__border::before {
+        margin-bottom: 27px;
+    }
+
+    .radio__copyright {
+        font-size: 12px;
+    }
+
+    /* ------guests------ */
+    .ac-text {
+        grid-template-columns: repeat(2, minmax(160px, 1fr));
+    }
 }
 
 @media (max-width: 480px) {
@@ -635,7 +1097,6 @@
         top: 0;
     }
     .podcast__img {
-        /* width: 256px; */
         width: 100%;
         height: 72px;
     }
@@ -764,6 +1225,46 @@
     .broadcasts__inner-1024 {
         gap: 13px;
     }
+
+    /* ------playlist------ */
+    .radio-wrap {
+        padding-top: 42px;
+    }
+
+    .radio__sub-header {
+        margin-bottom: 6px;
+    }
+
+    .radio__name {
+        padding: 7px 19px;
+    }
+
+    .radio__list {
+        gap: 15px;
+    }
+
+    .playlist__svg {
+        right: 0;
+    }
+
+    .playlist__card-wrapper {
+        aspect-ratio: 0;
+    }
+
+    .playlist__card {
+        flex: none;
+        flex: 1 0 30%;
+    }
+
+    .playlist__img {
+        width: 113px;
+        height: 113px;
+    }
+
+    .adv__btn {
+        padding: 13px 13px;
+    }
+
     /* ------adv------ */
     .adv {
         padding-bottom: 55px;
@@ -819,19 +1320,24 @@
     .inpuut {
         border-radius: 20px;
     }
+
     /* ------footer------ */
     .footer {
         padding: 0 0 10px 0;
     }
+
     .footer__wrapper {
         padding: 54px 0 48px 0;
     }
+
     .footer__block {
         padding-top: 9px;
     }
+
     .footer__descr {
         font-size: 12px;
     }
+
     /* .footer__menu {
         grid-template-rows: repeat(5, 1fr);
         grid-auto-flow: column;
