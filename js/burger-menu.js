@@ -20,7 +20,7 @@ if (navClose) {
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.burger__link')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')

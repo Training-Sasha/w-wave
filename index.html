@@ -29,13 +29,18 @@
                 <div class="header__wrap-one flex">
                     <img class="header__logo" src="img/logo-desctop.svg" alt="логотип w-wave">
                     <nav class="nav menu">
-                        <span class="menu__burger nav-toggle"></span>
+                        <button class="nav-toggle btn-reset" id="nav-toggle">
+                            <span class="menu__burger"></span>
+                        </button>
                         <ul class="nav__list list-reset flex">
-                            <li class="nav__list-item"><a class="nav__link" href="#">Подкасты</a></li>
-                            <li class="nav__list-item"><a class="nav__link" href="#">Передачи</a></li>
-                            <li class="nav__list-item"><a class="nav__link" href="#">Гости</a></li>
-                            <li class="nav__list-item"><a class="nav__link" href="#">Плейлисты</a></li>
-                            <li class="nav__list-item"><a class="nav__link" href="#">О&nbsp;нас</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#podcasts">Подкасты</a>
+                            </li>
+                            <li class="nav__list-item"><a class="nav__link" href="#broadcasts">Передачи</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#guests">Гости</a>
+                            </li>
+                            <li class="nav__list-item"><a class="nav__link" href="#playlists">Плейлисты</a></li>
+                            <li class="nav__list-item"><a class="nav__link" href="#about">О&nbsp;нас</a>
+                            </li>
                         </ul>
                     </nav>
                     <div class="header__btn-wrap">
@@ -136,7 +141,7 @@
                 </div>
             </div>
         </section>
-        <section class="podcast">
+        <section class="podcast" id="podcasts">
             <div class="container">
                 <h2 class="podcast__header">Подкасты</h2>
                 <ul class="podcast__list list-reset">
@@ -599,7 +604,7 @@
                 <div class="broadcasts__wrapper flex">
                     <div class="broadcasts__wrap flex">
                         <div class="broadcasts__inner flex">
-                            <h2 class="broadcasts__header">Передачи</h2>
+                            <h2 class="broadcasts__header" id="broadcasts">Передачи</h2>
                             <p class="broadcasts__descr--author">Автор:</p>
                             <select class="broadcasts__select js-choice">
                                 <option class="broadcasts__select-item" tabindex="0" value="value1" selected>Дмитрий
@@ -724,7 +729,7 @@
         <section class="guests">
             <div class="container">
                 <div class="guests__block">
-                    <h2 class="guests__header">Гости</h2>
+                    <h2 class="guests__header" id="guests">Гости</h2>
                     <p class="guests__descr">У&nbsp;нас бывают:</p>
                     <p class="guests__prg">Блогеры, арт-критики и&nbsp;деятели искусства, музыканты, молодые учёные и&nbsp;люди науки, историки, филологи и&nbsp;много других интересных гостей!</p>
                 </div>
@@ -992,7 +997,7 @@
         <section class="playlist">
             <div class="container">
                 <div class="checkbox-wrap">
-                    <h2 class="header__checkbox"></h2>
+                    <h2 class="header__checkbox" id="playlists"></h2>
                     <p class="checkbox__descr">Жанр</p>
                     <form class="form-check">
                         <ul class="list list-reset">
@@ -1162,7 +1167,7 @@
         </section>
         <section class="about">
             <div class="container">
-                <h2 class="about__header">О&nbsp;нас</h2>
+                <h2 class="about__header" id="about">О&nbsp;нас</h2>
                 <p class="about__descr">Приём-приём! Как слышно? Мы&nbsp;уже в&nbsp;эфире? Отлично, поехали!</p>
                 <p class="about__prg">Друзья, мы&nbsp;будем очень рады, если вы&nbsp;поможете стать нам лучше. Нам важен каждый слушатель, поэтому вы&nbsp;можете поделиться обратной связью о&nbsp;наших предеачах, темах, подборках и&nbsp;вообще обо всём! Это можно сделать либо
                     написав нам в&nbsp;форме ниже, либо кликнув на&nbsp;наши соцсети в&nbsp;подвале сайта. Спасибо! Услышимся!:)
@@ -1308,27 +1313,31 @@
                         </ul>
                     </div>
                     <ul class="footer__menu list-reset">
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Подкасты</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Плейлисты</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#podcasts">Подкасты</a>
+                        </li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#playlists">Плейлисты</a>
+                        </li>
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Новости</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Передачи</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#broadcasts">Передачи</a>
+                        </li>
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Сетка</a></li>
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Блоги</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Гости</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">О&nbsp;нас</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#guests">Гости</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#about">О&nbsp;нас</a>
+                        </li>
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Топы</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <ul class="footer__menu-320 list-reset">
-            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Подкасты</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">О&nbsp;нас</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Передачи</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#podcasts">Подкасты</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#about">О&nbsp;нас</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#broadcasts">Передачи</a></li>
             <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Новости</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Гости</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#guests">Гости</a></li>
             <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Блоги</a></li>
-            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Плейлисты</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-item-link" href="#playlists">Плейлисты</a></li>
             <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Топы</a></li>
             <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Сетка</a></li>
         </ul>
@@ -1337,24 +1346,36 @@
             <p class="footer__descr">W-WAVE ® 2021</p>
         </div>
     </footer>
-    <div class="nav-menu">
-        <span class="'nav-close"></span>
-        <ul class="burger__list list-reset">
-            <li class="burger__list-item">
-                <a href="#" class="burger__link">Подкасты</a>
-            </li>
-            <li class="burger__list-item">
-                <a href="#" class="burger__link">Плейлисты</a>
-            </li>
-            <li class="burger__list-item">
-                <a href="#" class="burger__link">Передачи</a>
-            </li>
-            <li class="burger__list-item">
-                <a href="#" class="burger__link">О нас</a>
-            </li>
-            <li class="burger__list-item">
-                <a href="#" class="burger__link">Гости</a>
-            </li>
+    <div class="nav-menu" id="nav-menu">
+        <div class="burger__wrapper">
+            <button class="nav-close btn-reset" id="nav-close">
+                <span class="burger-btn-close"></span>
+            </button>
+            <ul class="burger__list list-reset">
+                <li class="burger__list-item">
+                    <a href="#podcast" class="burger__link">Подкасты</a>
+                </li>
+                <li class="burger__list-item">
+                    <a href="#playlists" class="burger__link">Плейлисты</a>
+                </li>
+                <li class="burger__list-item">
+                    <a href="#broadcasts" class="burger__link">Передачи</a>
+                </li>
+                <li class="burger__list-item">
+                    <a href="#about" class="burger__link">О нас</a>
+                </li>
+                <li class="burger__list-item">
+                    <a href="#guests" class="burger__link">Гости</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="header__list-modal  list-reset flex">
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Новости</a></li>
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Опросы</a></li>
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Блоги</a></li>
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Рейтинги</a></li>
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Топы</a></li>
+            <li class="header__list-item"><a class="header__list-item-link" href="#">Реклама</a></li>
         </ul>
         <div class="burger-vector-wrapper">
             <svg class="burger-vector-one" width="115" height="315" viewBox="0 0 115 315" fill="none" xmlns="http://www.w3.org/2000/svg">
