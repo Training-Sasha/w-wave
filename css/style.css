@@ -910,7 +910,7 @@ p {
     color: var(--color-primary_light);
 }
 
-.ac.is-active > .ac-header .ac-trigger::after {
+.ac.is-active>.ac-header .ac-trigger::after {
     content: none;
 }
 
@@ -1295,11 +1295,11 @@ p {
     background-position: center;
 }
 
-.application-checkbox .checkbox:checked + .checkbox-txt::after {
+.application-checkbox .checkbox:checked+.checkbox-txt::after {
     display: block;
 }
 
-.application-checkbox .checkbox:focus + .checkbox-txt::before {
+.application-checkbox .checkbox:focus+.checkbox-txt::before {
     /* border-color: #FF5C00; */
 }
 
@@ -1628,16 +1628,16 @@ p {
     border-radius: 100px;
 }
 
-.radio-input:focus-visible + .radio__name::before {
+.radio-input:focus-visible+.radio__name::before {
     border-color: var(--color-primary);
     background-color: var(--color-shade_gray);
 }
 
-.radio-input:hover + .radio__name::before {
+.radio-input:hover+.radio__name::before {
     border-color: var(--color-primary);
 }
 
-.radio-input:checked + .radio__name::before {
+.radio-input:checked+.radio__name::before {
     left: 1px;
     width: 26px;
     height: 26px;
@@ -1647,7 +1647,7 @@ p {
     transform: translateX(5%);
 }
 
-.radio-input:checked + .radio__name::after {
+.radio-input:checked+.radio__name::after {
     content: "";
     position: absolute;
     width: 12px;
@@ -1785,4 +1785,94 @@ p {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+
+/* =============== MODAL ENTER =============== */
+
+.modal-enter {
+    /* position: fixed; */
+    background-color: var(--color-black);
+    /* inset: 0;  */
+    /* transform: translateY(-150%);  */
+    /* transition: .4s; */
+}
+
+.modal-enter__header {
+    color: var(--color-white);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    /* 48px */
+}
+
+.modal-enter__paragraph {
+    color: var(--color-white);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-enter__link {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    /* 30px */
+}
+
+.modal-enter__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.modal-enter__input {
+    padding: 10px 32px;
+    color: var(--color-text_gray);
+    background-color: var(--color-black);
+    border: 1px solid var(--color-white);
+    border-radius: 40px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.modal-enter__btn {
+    padding: 25px 54px;
+    border-radius: 40px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.modal-enter__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-enter__wrapper-icon {
+    display: flex;
+    gap: 40px;
+}
+
+.modal-enter__description {
+    color: var(--color-white);
+    font-family: Muller-Trial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.show-menu {
+    /* transform: translateY(0);  */
 }
