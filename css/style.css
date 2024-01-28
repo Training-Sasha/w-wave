@@ -1794,8 +1794,8 @@ p {
     position: fixed;
     display: flex;
     justify-content: center;
-    align-items: center;
-    /* align-items: flex-start; */
+    /* align-items: center; */
+    align-items: flex-start;
     background: rgba(0, 0, 0, 0.3);
     inset: 0;
     /* opacity: .8; */
@@ -1806,10 +1806,11 @@ p {
 }
 
 .modal-enter-wrapper {
+    position: relative;
     display: flex;
     align-items: flex-start;
     padding: 60px 30px 55px 60px;
-    gap: 166px;
+    gap: 208px;
     background-color: var(--color-black);
 }
 
@@ -1954,6 +1955,9 @@ p {
 }
 
 .modal-close-svg {
+    position: absolute;
+    top: 30px;
+    right: 30px;
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
@@ -1970,11 +1974,20 @@ p {
     stroke: var(--color-primary_shade);
 }
 
-.modal-close-svg {
-    transform: translateY(-30px);
-}
-
 .show-menu {
     transform: scale(1);
     /* transform: translateY(0); */
+}
+
+.modal-enter__input:focus-visible {
+    border-color: var(--color-primary_light);
+    outline: none;
+}
+
+.modal-enter__input:hover {
+    background: var(--color-light_black);
+}
+
+.modal-enter__input:active {
+    color: var(--color-white);
 }
