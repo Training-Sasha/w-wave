@@ -1272,8 +1272,7 @@ p {
     position: fixed;
     display: flex;
     inset: 0;
-    /* transform: translateY(-150%); */
-    transform: scale(0);
+    transform: translateY(-150%);
     transition: .4s;
     background-color: var(--color-shade_gray);
     z-index: 3;
@@ -1282,7 +1281,7 @@ p {
 .burger__wrapper {
     display: flex;
     flex-direction: column;
-    padding: 87px 34px 106px 114px;
+    padding: 28px 34px 106px 114px;
     gap: 55px;
 }
 
@@ -1317,19 +1316,40 @@ p {
 
 .burger-vector-one {
     position: absolute;
-    top: 144px;
+    top: 85px;
     right: 255px;
 }
 
 .burger-vector-two {
     position: absolute;
-    top: 59px;
+    top: 0;
     right: 113px;
 }
 
 .show-menu {
-    /* transform: translateY(0); */
-    transform: scale(1);
+    transform: translateY(54px);
+}
+
+.burger-btn-close {
+    position: relative;
+    width: 24px;
+    height: 3px;
+    display: block;
+    background-color: var(--color-primary);
+    border-radius: 4px;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.burger-btn-close::before {
+    content: "";
+    width: 24px;
+    height: 3px;
+    display: block;
+    border-radius: 4px;
+    background-color: var(--color-primary);
+    transform: rotate(-90deg);
+    position: absolute;
 }
 
 .burger__list-mobil {
