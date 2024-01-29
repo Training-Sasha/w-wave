@@ -181,6 +181,14 @@
     .nav__list {
         display: none;
     }
+    .nav-toggle {
+        width: 24px;
+        height: 24px;
+    }
+    .nav-close {
+        width: 24px;
+        height: 24px;
+    }
     .menu__burger {
         width: 24px;
         height: 3px;
@@ -214,31 +222,6 @@
         background-color: var(--color-primary);
         border-radius: 4px;
     }
-    .menu__burger {
-        /* transition: transform ease-in-out .3s; */
-    }
-    /* .menu__burger:active.menu__burger {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .menu__burger:active.menu__burger::before {
-        top: 0;
-        transform: rotate(-90deg)
-    }
-    .menu__burger:active.menu__burger::after {
-        display: none;
-    }
-    .menu__burger:focus.menu__burger {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .menu__burger:focus.menu__burger::before {
-        top: 0;
-        transform: rotate(-90deg)
-    }
-    .menu__burger:focus.menu__burger::after {
-        display: none;
-    } */
     .header__play {
         display: none;
         border: none;
@@ -353,7 +336,7 @@
     }
     /* ------header------ */
     .burger__wrapper {
-        padding: 74px 34px 24px 32px;
+        padding: 63px 34px 24px 32px;
     }
     .burger__list {
         gap: 39px 32px;
@@ -361,12 +344,12 @@
     .nav-menu {
         flex-direction: column;
     }
-    .burger-vector-wrapper {
+    .burger__vector-list {
         display: none;
     }
-    .header__list-modal {
+    .burger__list-mobil {
         display: grid;
-        padding: 32px 32px 15px 32px;
+        padding: 32px 32px 15px;
         gap: 32px 20px;
         grid-template-columns: repeat(2, minmax(123px, 1fr));
         background-color: var(--color-white);
@@ -481,10 +464,10 @@
 @media (max-width: 480px) {
     /* ------header------ */
     .burger__wrapper {
-        gap: 35px;
+        gap: 25px;
     }
     .burger__list {
-        gap: 39px 36px;
+        gap: 39px 31px;
     }
     .burger__list-item:nth-child(2),
     .burger__list-item:nth-child(4) {
