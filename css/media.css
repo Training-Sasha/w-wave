@@ -297,7 +297,7 @@
     }
     /* =============== MODAL - ENTER =============== */
     .modal-enter-wrapper {
-        gap: 0;
+        flex-basis: 539px;
     }
     .modal-enter-wrapper {
         padding: 29px 38px 56px 40px;
@@ -500,6 +500,7 @@
     }
     /* =============== MODAL - ENTER =============== */
     .modal-enter-wrapper {
+        flex-basis: 256px;
         padding: 40px 20px 35px 20px;
     }
     .modal-enter__block-header {
