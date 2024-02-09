@@ -186,6 +186,7 @@
         height: 24px;
     }
     .nav-close {
+        padding-left: 2px;
         width: 24px;
         height: 24px;
     }
@@ -343,8 +344,10 @@
     }
     .nav-menu {
         flex-direction: column;
+        background-color: var(--color-white);
     }
-    .burger__vector-list {
+    .burger-vector-one,
+    .burger-vector-two {
         display: none;
     }
     .burger__list-mobil {
