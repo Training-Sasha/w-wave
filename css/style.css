@@ -1790,7 +1790,7 @@ p {
 
 /* =============== MODAL ENTER =============== */
 
-.modal-enter {
+.modal-login {
     position: fixed;
     display: flex;
     justify-content: center;
@@ -1802,7 +1802,7 @@ p {
     /* transition: .4s; */
 }
 
-.modal-enter-wrapper {
+.modal-login-wrapper {
     position: relative;
     display: flex;
     align-items: flex-start;
@@ -1812,20 +1812,20 @@ p {
     background-color: var(--color-black);
 }
 
-.modal-enter__inner {
+.modal-login__inner {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 24px;
 }
 
-.modal-enter__block-header {
+.modal-login__block-header {
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
 
-.modal-enter__header {
+.modal-login__header {
     color: var(--color-white);
     font-size: 48px;
     font-style: normal;
@@ -1833,7 +1833,7 @@ p {
     line-height: 100%;
 }
 
-.modal-enter__paragraph {
+.modal-login__paragraph {
     color: var(--color-white);
     font-size: 20px;
     font-style: normal;
@@ -1841,7 +1841,7 @@ p {
     line-height: normal;
 }
 
-.modal-enter__link {
+.modal-login__link {
     color: var(--color-primary);
     font-size: 20px;
     font-style: normal;
@@ -1850,14 +1850,14 @@ p {
     /* 30px */
 }
 
-.modal-enter__form {
+.modal-login__form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 30px;
 }
 
-.modal-enter__input {
+.modal-login__input {
     width: 526px;
     height: 70px;
     padding: 10px 32px;
@@ -1871,7 +1871,7 @@ p {
     line-height: normal;
 }
 
-.modal-enter__btn {
+.modal-login__btn {
     padding: 28px 54px;
     border-radius: 40px;
     color: var(--color-white);
@@ -1884,20 +1884,20 @@ p {
     transition: .4s ease-in-out;
 }
 
-.modal-enter__btn:focus-visible {
+.modal-login__btn:focus-visible {
     outline: 2px solid var(--color-primary_shade);
     background-color: var(--color-primary_light);
 }
 
-.modal-enter__btn:hover {
+.modal-login__btn:hover {
     background-color: var(--color-primary_light);
 }
 
-.modal-enter__btn:active {
+.modal-login__btn:active {
     background-color: var(--color-primary_shade);
 }
 
-.modal-enter__block {
+.modal-login__block {
     padding-top: 30px;
     display: flex;
     flex-direction: column;
@@ -1906,13 +1906,13 @@ p {
     /* border-top: 1px solid var(--color-text_gray); */
 }
 
-.modal-enter__list {
+.modal-login__list {
     display: flex;
     align-items: center;
     gap: 44px;
 }
 
-.modal-enter__description {
+.modal-login__description {
     color: var(--color-white);
     font-size: 20px;
     font-style: normal;
@@ -1920,53 +1920,70 @@ p {
     line-height: normal;
 }
 
-.modal-enter__item-facebook,
-.modal-enter__item-social {
+.modal-login__item-facebook,
+.modal-login__item-social {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
-.modal-enter__item-facebook:focus-visible path {
+.modal-login__item-facebook:focus-visible path {
     fill: var(--color-primary_light);
 }
 
-.modal-enter__item-facebook:hover path {
+.modal-login__item-facebook:hover path {
     fill: var(--color-primary);
 }
 
-.modal-enter__item-facebook:active path {
+.modal-login__item-facebook:active path {
     fill: var(--color-primary_shade);
 }
 
-.modal-enter__item-social:focus-visible rect {
+.modal-login__item-social:focus-visible rect {
     fill: var(--color-primary_light);
 }
 
-.modal-enter__item-social:hover rect {
+.modal-login__item-social:hover rect {
     fill: var(--color-primary);
 }
 
-.modal-enter__item-social:active rect {
+.modal-login__item-social:active rect {
     fill: var(--color-primary_shade);
 }
 
-.modal-close-svg {
+.modal-login-close {
     position: absolute;
     top: 30px;
     right: 30px;
+    width: 42px;
+    height: 42px;
+}
+
+.modal-login-close-svg {
     transition: all .3s ease-in-out;
     cursor: pointer;
 }
 
-.modal-close-svg:focus-visible {
+.modal-login-close:focus-visible .modal-login-close-svg circle {
     stroke: var(--color-primary_light);
 }
 
-.modal-close-svg:hover {
+.modal-login-close:focus-visible .modal-login-close-svg path {
+    stroke: var(--color-primary_light);
+}
+
+.modal-login-close:hover .modal-login-close-svg circle {
     stroke: var(--color-primary);
 }
 
-.modal-close-svg:active {
+.modal-login-close:hover .modal-login-close-svg path {
+    stroke: var(--color-primary);
+}
+
+.modal-login-close:active .modal-login-close-svg circle {
+    stroke: var(--color-primary_shade);
+}
+
+.modal-login-close:active .modal-login-close-svg path {
     stroke: var(--color-primary_shade);
 }
 

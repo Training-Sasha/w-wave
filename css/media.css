@@ -296,13 +296,13 @@
         cursor: pointer;
     }
     /* =============== MODAL - ENTER =============== */
-    .modal-enter-wrapper {
+    .modal-login-wrapper {
         flex-basis: 539px;
     }
-    .modal-enter-wrapper {
+    .modal-login-wrapper {
         padding: 29px 38px 56px 40px;
     }
-    .modal-enter__input {
+    .modal-login__input {
         width: 458px;
     }
     /* ------hero------ */
@@ -499,53 +499,53 @@
         justify-content: center;
     }
     /* =============== MODAL - ENTER =============== */
-    .modal-enter-wrapper {
+    .modal-login-wrapper {
         flex-basis: 256px;
         padding: 40px 20px 35px 20px;
     }
-    .modal-enter__block-header {
+    .modal-login__block-header {
         gap: 10px;
     }
-    .modal-enter__inner {
+    .modal-login__inner {
         gap: 18px;
     }
-    .modal-enter__header {
+    .modal-login__header {
         font-size: 24px;
     }
-    .modal-enter__paragraph {
+    .modal-login__paragraph {
         width: 164px;
         font-size: 12px;
         line-height: 16px;
     }
-    .modal-enter__link {
+    .modal-login__link {
         font-size: 12px;
         line-height: 18px;
     }
-    .modal-enter__form {
+    .modal-login__form {
         gap: 20px;
     }
-    .modal-enter__input {
+    .modal-login__input {
         padding: 10px 18px;
         width: 215px;
         height: 40px;
         font-size: 16px;
     }
-    .modal-enter__btn {
+    .modal-login__btn {
         padding: 12px 56px;
         font-size: 16px;
     }
-    .modal-enter__block {
+    .modal-login__block {
         padding-top: 21px;
         gap: 11px;
     }
-    .modal-enter__description {
+    .modal-login__description {
         font-size: 12px;
         line-height: 24px;
     }
-    .modal-enter__list {
+    .modal-login__list {
         gap: 52px;
     }
-    .modal-close-svg {
+    .modal-login-close-svg {
         top: 20px;
         right: 20px;
         width: 28px;
