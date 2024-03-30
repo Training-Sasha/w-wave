@@ -10,12 +10,8 @@
 
 /*=============== SHOW MENU ===============*/
 const modalLogin = document.getElementById('modal-login'), // this is burger menu itself
-    modalLoginToggle = document.querySelectorAll('modal-login--btn'), // this is burger button
+    modalLoginToggle = document.querySelectorAll('.modal-login--btn'), // this is burger button
     modalLoginClose = document.getElementById('modal-login-close') // this is close button inside menu
-
-// const modalLoginToggle = document.querySelectorAll('[modal-login-toggle]')
-
-// const modalLoginToggle = document.querySelectorAll('[modal-login--btn]')
 
 /* Validate if constant exists */
 if (modalLoginToggle && modalLoginClose) { // условие для modalToggle и modalClose
@@ -37,6 +33,15 @@ if (modalLoginToggle && modalLoginClose) { // условие для modalToggle 
         }
     }
 
+    modalLoginToggle.forEach((loginButton) => {
+        loginButton.addEventListener('click', () => {
+            modalLogin.classList.add('show-menu')
+
+            const popup = document.querySelector('.popup');
+            document.addEventListener('mousedown', closePopup);
+            document.addEventListener('keydown', closeByEsc);
+        })
+    })
     modalLoginToggle.addEventListener('click', () => { // при 'клике' по элементу modalLoginToggle
         modalLogin.classList.add('show-menu') //  modalLogin добавляется класс 'show-menu'
 
@@ -44,7 +49,6 @@ if (modalLoginToggle && modalLoginClose) { // условие для modalToggle 
         document.addEventListener('mousedown', closePopup); // обработчик события addEventListener добавляет событие - 'mousedown' из функции closePopup.
         document.addEventListener('keydown', closeByEsc); // обработчик события addEventListener добавляет событие - 'keydown' из функции closeByEsc.
     })
-
     modalLoginClose.addEventListener('click', () => { // при 'клике' по элементу modalLoginToggle
         modalLogin.classList.remove('show-menu') // on click close button remove class 'show-menu' from menu
 
