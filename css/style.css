@@ -1005,10 +1005,10 @@ p {
     overflow: hidden;
 } */
 
-
-/* .tabs__body {
-    position: relative;
-} */
+.tabs__body {
+    /* position: relative; */
+    width: 100%;
+}
 
 .tabs__content {
     display: none;

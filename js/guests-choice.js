@@ -72,11 +72,23 @@ const GUESTS = [{
 
 const guestItems = document.querySelectorAll('.guest-item')
 
-guestItems.forEach((item) = {
+guestItems.forEach((item) => {
     item.addEventListener('click', selectGuest)
 })
 
 function selectGuest(event) {
     const guestIndex = event.target.dataset.index
     const selectedGuest = GUESTS[guestIndex] // update selected guest in HTML
+}
+
+// Получаем элементы
+const guestName = document.querySelector('.ac-text-item[data-content=""]');
+const guestDescription = document.querySelector('#guest-description');
+const guestImage = document.querySelector('#guest-image');
+
+if (guestName && guestDescription && guestImage) {
+    // Устанавливаем контент
+    guestName.textContent = selectGuest.name;
+    guestDescription.textContent = selectGuest.description;
+    guestImage.setAttribute('src', selectGuest.photo);
 }
