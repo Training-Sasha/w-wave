@@ -1010,13 +1010,14 @@ p {
     width: 100%;
 }
 
-.tabs__content {
+
+/*.tabs__content {
     display: none;
 }
 
 .tabs__content_active {
     display: block;
-}
+}*/
 
 .ac {
     font-size: 1px;
