@@ -5,7 +5,6 @@
     .playlist__card {
         flex: 1 0 30%;
     }
-
     .playlist__img {
         width: 100%;
     }
@@ -96,21 +95,17 @@
         justify-content: start;
         gap: 227px;
     }
-
     /* ------playlist------ */
     .radio__block-desctop {
         display: none;
     }
-
     .radio__block-shadow {
         display: block;
     }
-
     .playlists__wrap {
         flex-direction: column;
         gap: 0;
     }
-
     .radio__list {
         height: 165px;
         flex-wrap: wrap;
@@ -119,67 +114,53 @@
         gap: 20px 35px;
         margin-bottom: 31px;
     }
-
     .playlists__wrap {
         flex-direction: column;
     }
-
     .playlist__card-wrapper {
         aspect-ratio: 1 / 1;
     }
-
     .playlist__cards {
         padding-top: 0;
         padding-bottom: 42px;
     }
-
     .playlist__card {
         height: 112px;
         display: flex;
         flex: 1 0 30%;
     }
-
     .playlist__img {
         aspect-ratio: 1 / 1;
         width: 112px;
         height: 112px;
     }
-
     .playlist__svg {
         left: 0;
     }
-
     .playlist__inner {
         width: 100%;
         padding: 38px 8px 16px 9px;
     }
-
     /* ------about------ */
     .about {
         padding: 90px 0 93px 0;
     }
-
     .about__header {
         margin-bottom: 17px;
     }
-
     .about__wrapper {
         margin-bottom: 30px;
     }
-
     .about__block-svg--one {
         display: none;
     }
-
     .form {
         width: 100%;
     }
-
     .about__swiper-btn--next {
         right: 31px;
         top: 31%;
     }
-
     .about__swiper-btn--prev {
         left: 31px;
         top: 31%;
@@ -251,9 +232,6 @@
     .adv__btn {
         padding: 23px 11px;
     }
-}
-
-@media (max-width: 1024px) {
     .social-svg {
         margin-bottom: 15px;
     }
@@ -326,6 +304,16 @@
         display: block;
         cursor: pointer;
     }
+    /* =============== MODAL - ENTER =============== */
+    .modal-enter-wrapper {
+        flex-basis: 539px;
+    }
+    .modal-enter-wrapper {
+        padding: 29px 38px 56px 40px;
+    }
+    .modal-enter__input {
+        width: 458px;
+    }
     /* ------hero------ */
     .hero__img {
         display: none;
@@ -393,46 +381,37 @@
     .swiper {
         margin-bottom: 32px;
     }
-
     .about__wrapper {
         flex-direction: column;
         position: relative;
     }
-
     .input-box {
         flex-direction: column;
     }
-
     .about__block-two {
         display: none;
     }
-
     .about__block-two--768 {
         display: block;
         display: flex;
         justify-content: right;
     }
-
     .about__svg--one {
         position: absolute;
         left: -114px;
     }
-
     .swiper-img {
         width: auto;
         height: auto;
     }
-
     .about__swiper-btn--prev {
         left: 46px;
         top: 29%;
     }
-
     .about__swiper-btn--next {
         right: 46px;
         top: 29%;
     }
-
     /* ------footer------ */
     .footer {
         padding: 93px 0 7px 0;
@@ -549,6 +528,59 @@
         display: flex;
         justify-content: center;
     }
+    /* =============== MODAL - ENTER =============== */
+    .modal-enter-wrapper {
+        flex-basis: 256px;
+        padding: 40px 20px 35px 20px;
+    }
+    .modal-enter__block-header {
+        gap: 10px;
+    }
+    .modal-enter__inner {
+        gap: 18px;
+    }
+    .modal-enter__header {
+        font-size: 24px;
+    }
+    .modal-enter__paragraph {
+        width: 164px;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .modal-enter__link {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .modal-enter__form {
+        gap: 20px;
+    }
+    .modal-enter__input {
+        padding: 10px 18px;
+        width: 215px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .modal-enter__btn {
+        padding: 12px 56px;
+        font-size: 16px;
+    }
+    .modal-enter__block {
+        padding-top: 21px;
+        gap: 11px;
+    }
+    .modal-enter__description {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .modal-enter__list {
+        gap: 52px;
+    }
+    .modal-close-svg {
+        top: 20px;
+        right: 20px;
+        width: 28px;
+        height: 28px;
+    }
     /* ------hero------ */
     .hero__header {
         height: 55px;
@@ -575,77 +607,61 @@
     .ac-text {
         grid-template-columns: repeat(2, minmax(160px, 1fr));
     }
-
     /* ------about------ */
     .about {
         padding: 54px 0 52px 0;
     }
-
     .about__wrapper {
         margin-bottom: 27px;
     }
-
     .about__header {
         margin-bottom: 12px;
         font-size: 24px;
         line-height: 24px;
     }
-
     .about__descr {
         margin-bottom: 4px;
         font-size: 14px;
         line-height: 21px;
     }
-
     .about__prg {
         font-size: 14px;
         line-height: 160%;
     }
-
     .about__swiper-name {
         font-size: 14px;
         line-height: 18px;
     }
-
     .about__swiper-descr {
         font-size: 12px;
         line-height: 16px;
     }
-
     .input {
         font-size: 16px;
     }
-
     .form__btn {
         font-size: 16px;
     }
-
     .application-checkbox .checkbox-txt {
         font-size: 9px;
     }
-
     .form {
         flex-direction: column;
     }
-
     .about__block-two--768 {
         display: none;
     }
-
     .about__swiper-btn {
         display: none;
     }
-
     .about__swiper-btn--next {
         right: 1px;
         top: 31%;
     }
-
     .about__swiper-btn--prev {
         left: 1px;
         top: 31%;
     }
-
     /* ------footer------ */
     .footer__menu {
         display: none;
@@ -671,7 +687,6 @@
     .footer__descr {
         font-size: 12px;
     }
-
     .radio__border::before {
         width: 100%;
     }
@@ -681,20 +696,16 @@
     .broadcasts__inner:nth-child(2) {
         display: none;
     }
-
     .broadcasts__wrapper {
         flex-direction: column;
     }
-
     .broadcasts__wrap {
         padding-bottom: 0;
     }
-
     .broadcasts__wrap-cards {
         justify-content: center;
         padding: 0;
     }
-
     .broadcasts__inner-1024 {
         display: block;
         display: flex;
@@ -703,7 +714,6 @@
         padding: 30px 0;
         gap: 20px;
     }
-
     .broadcasts__inner-1024::before {
         content: "";
         top: 0;
@@ -712,36 +722,31 @@
         position: absolute;
         background-color: var(--color-light_color);
     }
-
     .broadcasts__prg {
         width: 256px;
     }
 }
 
+
 /* -------------------------------768px-------------------------------*/
 
 @media (max-width: 992px) {
-    :root {
+     :root {
         --padding-aside: 0 114px;
     }
-
     .container {
         padding: var(--padding-aside);
     }
-
     /* ------header------ */
     .header__list {
         max-width: 100%;
     }
-
     .nav {
         gap: 26px;
     }
-
     .nav__list {
         display: none;
     }
-
     .menu__burger {
         width: 24px;
         height: 3px;
@@ -753,7 +758,6 @@
         border-radius: 4px;
         cursor: pointer;
     }
-
     .menu__burger::before {
         content: "";
         width: 24px;
@@ -765,7 +769,6 @@
         border-radius: 4px;
         background-color: var(--color-primary);
     }
-
     .menu__burger::after {
         content: "";
         width: 24px;
@@ -777,105 +780,86 @@
         background-color: var(--color-primary);
         border-radius: 4px;
     }
-
     .header__play {
         display: none;
         border: none;
     }
-
     .header__play--768 {
         display: block;
         cursor: pointer;
     }
-
     /* ------hero------ */
     .hero__img {
         display: none;
     }
-
     /* ---podcast--- */
     .podcast__list {
         flex-direction: column;
     }
-
     .podcast__list-item {
         width: 100%;
     }
-
     .podcast__list {
         grid-template-columns: 1fr;
     }
-
     /* ------guests------ */
     .guests__wrapper {
         gap: 50px;
         flex-direction: column;
     }
-
     .guests__inner-img-plug,
     .guests__inner-img {
         width: 540px;
         height: 220px;
     }
-
     .ac-text {
         gap: 30px 30px;
     }
-
     .guests__text {
         max-width: 398px;
     }
-
     /* ------broadcasts------ */
     .broadcasts__wrapper {
         gap: 0;
     }
-
     .broadcasts__inner {
         margin-bottom: 45px;
     }
-
     .broadcasts__wrap-cards {
         margin-bottom: 61px;
     }
-
     /* ------playlist------ */
     .radio__list {
         height: 227px;
         gap: 34px;
     }
-
     .playlist__card {
         flex: 1 0 31%;
     }
 }
 
+
 /* -------------------------------320px------------------------------- */
 
 @media (max-width: 767px) {
-    :root {
+     :root {
         --padding-aside: 0 32px;
     }
-
     .container {
         padding: var(--padding-aside);
     }
-
     /* ------header------ */
     .header__list {
         display: none;
     }
-
     .header__btn-login {
         display: none;
     }
-
     .header__logo-tablet {
         width: 87px;
         height: 10px;
         display: block;
     }
-
     .header__btn-login--320 {
         display: block;
         padding: 9.5px 24px;
@@ -887,47 +871,38 @@
         font-size: 16px;
         line-height: 16px;
     }
-
     .header__logo--tablet {
         height: 54px;
         justify-content: space-between;
     }
-
     .header__wrap-one {
         height: 50px;
     }
-
     .header__wrap-two {
         height: 43px;
     }
-
     .header__play--768 {
         display: none;
     }
-
     .play--320 {
         display: block;
     }
-
     .play-btn--320 {
         justify-content: center;
         align-items: center;
         gap: 5px;
     }
-
     .play-btn-descr--320 {
         font-weight: 500;
         font-size: 16px;
         line-height: normal;
         color: var(--color-primary);
     }
-
     .submenu {
         gap: 0;
         display: flex;
         justify-content: center;
     }
-
     /* ------hero------ */
     .hero__header {
         height: 55px;
@@ -936,25 +911,20 @@
         font-size: 32px;
         line-height: 32px;
     }
-
     .hero__header .hero__header-excerpt {
         font-size: 32px;
     }
-
     .hero__block:nth-child(1) {
         padding: 23px 0;
     }
-
     .hero__prph {
         font-size: 14px;
         line-height: 21px;
     }
-
     .hero__btn {
         padding: 15px 45px;
         font-size: 16px;
     }
-
     /* ------playlist------ */
     .radio__list {
         height: auto;
@@ -963,11 +933,9 @@
         overflow-x: auto;
         gap: 15px;
     }
-
     .radio__list::-webkit-scrollbar {
         display: none;
     }
-
     .radio__name {
         padding: 7px 23px;
         border: 2px solid var(--color-primary);
@@ -979,92 +947,72 @@
         font-weight: 500;
         line-height: normal;
     }
-
     .radio__name::before {
         display: none;
     }
-
-    .radio-input:checked + .radio__name {
+    .radio-input:checked+.radio__name {
         color: var(--color-white);
         background-color: var(--color-primary);
     }
-
-    .radio-input:hover + .radio__name {
+    .radio-input:hover+.radio__name {
         color: var(--color-white);
         background-color: var(--color-primary);
     }
-
-    .radio-input:checked + .radio__name::before {
+    .radio-input:checked+.radio__name::before {
         display: none;
     }
-
-    .radio-input:checked + .radio__name::after {
+    .radio-input:checked+.radio__name::after {
         display: none;
     }
-
     .radio-wrap {
         padding-top: 54px;
     }
-
     .radio__header {
         margin-bottom: 6px;
         font-size: 24px;
     }
-
     .radio__sub-header {
         margin-bottom: 4px;
         font-size: 12px;
     }
-
     .playlists__wrap {
         flex: 1 0 auto;
     }
-
     .playlist__img {
         width: 100%;
         height: 100%;
     }
-
     .playlist__card {
         height: 100%;
         flex: 1 0 29%;
         flex-direction: column;
     }
-
     .playlist__inner {
         padding: 8px 8px 8px 9px;
     }
-
     .playlist__name {
         margin-bottom: 4px;
         font-size: 12px;
     }
-
     .playlist__descr {
         font-size: 9px;
     }
-
     .playlist__svg {
         right: 0;
     }
-
     .playlist__cards {
         padding-bottom: 31px;
     }
-
     .radio__prg {
         line-height: 16px;
         font-size: 12px;
     }
-
     .radio__border::before {
         margin-bottom: 27px;
     }
-
     .radio__copyright {
         font-size: 12px;
     }
-
     /* ------guests------ */
     .ac-text {
         grid-template-columns: repeat(2, minmax(160px, 1fr));
@@ -1229,31 +1177,25 @@
         width: 77px;
         height: 105px;
     }
-
     /* ------about------ */
     .swiper {
         overflow: visible;
     }
-
     .swiper-slide {
         width: 113px;
     }
-
     .input-box {
         gap: 29px;
     }
-
     .input-text {
         padding: 15px 22px;
         border-radius: 20px;
     }
-
     .input-name,
     .input-mail {
         height: 51px;
         padding-left: 21px;
     }
-
     .form__wrapp-checkbox {
         gap: 19px;
     }
@@ -1304,46 +1246,36 @@
     .broadcasts__inner-1024 {
         gap: 13px;
     }
-
     /* ------playlist------ */
     .radio-wrap {
         padding-top: 42px;
     }
-
     .radio__sub-header {
         margin-bottom: 6px;
     }
-
     .radio__name {
         padding: 7px 19px;
     }
-
     .radio__list {
         gap: 15px;
     }
-
     .playlist__svg {
         right: 0;
     }
-
     .playlist__card-wrapper {
         aspect-ratio: 0;
     }
-
     .playlist__card {
         flex: none;
         flex: 1 0 30%;
     }
-
     .playlist__img {
         width: 113px;
         height: 113px;
     }
-
     .adv__btn {
         padding: 13px 13px;
     }
-
     /* ------adv------ */
     .adv {
         padding-bottom: 55px;
@@ -1389,20 +1321,16 @@
     .adv__btn {
         padding: 13px 13px;
     }
-
     /* ------about------ */
     .swiper {
         margin-bottom: 9px;
     }
-
     .form__btn {
         padding: 17px 44px;
     }
-
     .inpuut {
         border-radius: 20px;
     }
-
     /* ------footer------ */
     .footer {
         padding: 0 0 10px 0;
