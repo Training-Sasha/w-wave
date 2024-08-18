@@ -9,15 +9,15 @@
 // removeEventListener() Удаляет обработчик события, который был зарегистрирован при помощи EventTarget
 
 /*=============== SHOW MENU ===============*/
-const modalEnter = document.getElementById('modal-enter'), // this is burger menu itself
-    modalToggle = document.getElementById('madal-toggle'), // this is burger button
-    modalClose = document.getElementById('modal-close') // this is close button inside menu
+const modalLogin = document.getElementById('modal-login'), // this is burger menu itself
+    modalLoginToggle = document.querySelectorAll('.modal-login--btn'), // this is burger button
+    modalLoginClose = document.getElementById('modal-login-close') // this is close button inside menu
 
 /* Validate if constant exists */
-if (modalToggle && modalClose) { // условие для modalToggle и modalClose
+if (modalLoginToggle && modalLoginClose) { // условие для modalToggle и modalClose
     function closePopup(e) { // условие функции closePopup 
         if (e.target.closest('.popup') === null) { // цель условия исключить обработку событий клика внутри .popup  
-            modalEnter.classList.remove('show-menu') //  сlassList.remove удаляет у modalEnter класс 'show-menu'
+            modalLogin.classList.remove('show-menu') //  сlassList.remove удаляет у modalLogin класс 'show-menu'
 
             document.removeEventListener('mousedown', closePopup); // mousedown/mouseup. Кнопка мыши нажата/отпущена над элементом function closePopup
             document.removeEventListener('keydown', closeByEsc); // removeEventListener() Удаляет 'keydown', function closeByEsc
@@ -26,23 +26,31 @@ if (modalToggle && modalClose) { // условие для modalToggle и modalCl
 
     function closeByEsc(e) { // условие функции closeByEsc
         if (e.key === 'Escape') { // условие, которое произойдет при клике на клавишу Escape, условие проверяет нажата ли клавиша ESC, если нажата, то код будет выполнен
-            modalEnter.classList.remove('show-menu') // сlassList.remove удаляет у modalEnter класс 'show-menu'
+            modalLogin.classList.remove('show-menu') // сlassList.remove удаляет у modalLogin класс 'show-menu'
 
             document.removeEventListener('keydown', closeByEsc); // обработчик события removeEventListener удаляет событие - 'keydown' из функции closeByEsc. 
             document.removeEventListener('mousedown', closePopup); // обработчик события removeEventListener удаляет событие - 'mousedown' из функции closePopup.
         }
     }
 
-    modalToggle.addEventListener('click', () => { // при 'клике' по элементу modalToggle
-        modalEnter.classList.add('show-menu') //  modalEnter добавляется класс 'show-menu'
+    modalLoginToggle.forEach((loginButton) => {
+        loginButton.addEventListener('click', () => {
+            modalLogin.classList.add('show-menu')
+
+            const popup = document.querySelector('.popup');
+            document.addEventListener('mousedown', closePopup);
+            document.addEventListener('keydown', closeByEsc);
+        })
+    })
+    modalLoginToggle.addEventListener('click', () => { // при 'клике' по элементу modalLoginToggle
+        modalLogin.classList.add('show-menu') //  modalLogin добавляется класс 'show-menu'
 
         const popup = document.querySelector('.popup'); // поиск эдемента с классом '.popup'
         document.addEventListener('mousedown', closePopup); // обработчик события addEventListener добавляет событие - 'mousedown' из функции closePopup.
         document.addEventListener('keydown', closeByEsc); // обработчик события addEventListener добавляет событие - 'keydown' из функции closeByEsc.
     })
-
-    modalClose.addEventListener('click', () => { // при 'клике' по элементу modalToggle
-        modalEnter.classList.remove('show-menu') // on click close button remove class 'show-menu' from menu
+    modalLoginClose.addEventListener('click', () => { // при 'клике' по элементу modalLoginToggle
+        modalLogin.classList.remove('show-menu') // on click close button remove class 'show-menu' from menu
 
         document.removeEventListener('mousedown', closePopup); // обработчик события removeEventListener удаляет событие - 'mousedown' из функции closePopup.
         document.removeEventListener('keydown', closeByEsc); // обработчик события removeEventListener удаляет событие - 'keydown' из функции closeByEsc.

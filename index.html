@@ -21,7 +21,8 @@
             <div class="container">
                 <div class="header__logo--tablet">
                     <img class="header__logo-tablet" src="img/logo-desctop.svg" alt="логотип w-wave">
-                    <button class="header__btn-login--320 btn-reset">Вход</button>
+                    <button class="header__btn-login--320 modal-login--btn btn-reset"
+                        id="modal-login-toggle">Вход</button>
                 </div>
             </div>
         </div>
@@ -55,7 +56,8 @@
                                     stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                         </button>
-                        <button class="header__btn-login btn-reset" id="madal-toggle">Вход</button>
+                        <button class="header__btn-login modal-login--btn btn-reset"
+                            id="modal-login-toggle-mobile">Вход</button>
                     </div>
                 </div>
             </div>
@@ -3004,27 +3006,27 @@
             <p class="footer__descr">W-WAVE ® 2021</p>
         </div>
     </footer>
-    <div class="modal-enter" id="modal-enter">
-        <div class="modal-enter-wrapper popup">
-            <div class="modal-enter__inner">
-                <div class="modal-enter__block-header">
-                    <h2 class="modal-enter__header">Вход</h2>
-                    <p class="modal-enter__paragraph">Если у&nbsp;вас ещё нет аккаунта,<a href="#"
-                            class="modal-enter__link">
+    <div class="modal-login" id="modal-login">
+        <div class="modal-login-wrapper popup">
+            <div class="modal-login__inner">
+                <div class="modal-login__block-header">
+                    <h2 class="modal-login__header">Вход</h2>
+                    <p class="modal-login__paragraph">Если у&nbsp;вас ещё нет аккаунта,<a href="#"
+                            class="modal-login__link">
                             зарегистрируйтесь</a></p>
                 </div>
-                <form class="modal-enter__form" action="">
-                    <input class="modal-enter__input" type="text" placeholder="Логин" required>
-                    <input class="modal-enter__input" type="password" placeholder="Пароль" required>
-                    <button class="modal-enter__btn btn-reset" type="submit">Войти</button>
+                <form class="modal-login__form" action="">
+                    <input class="modal-login__input" type="text" placeholder="Логин" required>
+                    <input class="modal-login__input" type="password" placeholder="Пароль" required>
+                    <button class="modal-login__btn btn-reset" type="submit">Войти</button>
                 </form>
-                <div class="modal-enter__block">
-                    <p class="modal-enter__description">
+                <div class="modal-login__block">
+                    <p class="modal-login__description">
                         Войти с&nbsp;помощью:
                     </p>
-                    <ul class="modal-enter__list list-reset">
-                        <li class="modal-enter__item">
-                            <svg class="modal-enter__item-facebook" xmlns="http://www.w3.org/2000/svg" width="40"
+                    <ul class="modal-login__list list-reset">
+                        <li class="modal-login__item">
+                            <svg class="modal-login__item-facebook" xmlns="http://www.w3.org/2000/svg" width="40"
                                 height="40" viewbox="0 0 40 40" fill="none">
                                 <g clip-path="url(#clip0_24531_5473)">
                                     <path
@@ -3038,8 +3040,8 @@
                                 </defs>
                             </svg>
                         </li>
-                        <li class="modal-enter__item">
-                            <svg class="modal-enter__item-social" xmlns="http://www.w3.org/2000/svg" width="34"
+                        <li class="modal-login__item">
+                            <svg class="modal-login__item-social" xmlns="http://www.w3.org/2000/svg" width="34"
                                 height="34" viewbox="0 0 34 34" fill="none">
                                 <rect width="33.33" height="33.33" rx="2" fill="#A1A6B4" />
                                 <path
@@ -3047,8 +3049,8 @@
                                     fill="#121723" />
                             </svg>
                         </li>
-                        <li class="modal-enter__item">
-                            <svg class="modal-enter__item-social" xmlns="http://www.w3.org/2000/svg" width="34"
+                        <li class="modal-login__item">
+                            <svg class="modal-login__item-social" xmlns="http://www.w3.org/2000/svg" width="34"
                                 height="34" viewbox="0 0 34 34" fill="none">
                                 <rect width="33.33" height="33.33" rx="2" fill="#A1A6B4" />
                                 <path
@@ -3059,8 +3061,8 @@
                     </ul>
                 </div>
             </div>
-            <button class="modal-close btn-reset" id="modal-close">
-                <svg class="modal-close-svg" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
+            <button class="modal-login-close btn-reset" id="modal-login-close">
+                <svg class="modal-login-close-svg" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
                     viewBox="0 0 42 42" fill="none">
                     <circle cx="21" cy="21" r="19.5" stroke="#A1A6B4" stroke-width="3" />
                     <path d="M29.6777 12L12 29.6777M29.6777 29.6777L12 12" stroke="#A1A6B4" stroke-width="3" />
@@ -3135,7 +3137,7 @@
     <script src="libs/input-validate/inputmask.min.js"></script>
     <script src="js/swiper/swiper.js"></script>
     <script src="js/burger-menu.js"></script>
-    <script src="js/modal-enter.js"></script>
+    <script src="js/modal-login.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/script.js"></script>
 </body>
