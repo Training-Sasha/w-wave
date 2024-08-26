@@ -10,7 +10,7 @@
 
 /*=============== SHOW MENU ===============*/
 const modalLogin = document.getElementById('modal-login'), // this is burger menu itself
-    modalLoginToggle = document.querySelectorAll('.modal-login--btn'), // this is burger button
+    modalLoginToggle = document.querySelectorAll('.modal-login-btn'), // this is burger button
     modalLoginClose = document.getElementById('modal-login-close') // this is close button inside menu
 
 /* Validate if constant exists */
